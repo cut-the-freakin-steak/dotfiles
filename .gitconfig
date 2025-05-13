@@ -1,0 +1,12 @@
+[user]
+	name = cut-the-freakin-steak
+	email = calvaradolpez7@gmail.com
+[core]
+	compression = 9
+[http]
+	postBuffer = 524288000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
