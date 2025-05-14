@@ -136,6 +136,7 @@ export PATH="$HOME/.config/emacs/bin:$PATH"
 alias nvim="nvim --listen 127.0.0.1:6004"
 alias rebuild-nix-air="darwin-rebuild switch --flake ~/.config/nix#air"
 alias update-nix="nix flake update --flake ~/.config/nix/"
+alias :3=""
 
 # Added by Windsurf
 export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
