@@ -60,7 +60,6 @@ autoload -U compinit && compinit
 
 # history stuff
 HISTSIZE=5000
-HISTFILE=~/dotfiles/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
