@@ -20,6 +20,23 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 
 # User configuration
+# make python normal (add python command alongside python3)
+export PATH="/Users/steak/.virtualenvs/debugpy/bin:$PATH"
+
+# add godot to the path
+export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# aliases
+alias nix-rebuild-air="darwin-rebuild switch --flake ~/.config/nix#air"
+alias nix-update="nix flake update --flake ~/.config/nix/"
+alias ls="ls --color"
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
+[[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+
 # where we want to load zinit (plugin manager for zsh) and store its plugins
 ZINIT_HOME="${XGD_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -32,23 +49,40 @@ fi
 # source/load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# make python normal (add python command alongside python3)
-export PATH="/Users/steak/.virtualenvs/debugpy/bin:$PATH"
+# add zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 
-# add godot to the path
-export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
+# load autocompletions
+autoload -U compinit && compinit
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# history stuff
+HISTSIZE=5000
+HISTFILE=~/dotfiles/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
-# aliases
-alias nvim="nvim --listen 127.0.0.1:6004"
-alias nix-rebuild-air="darwin-rebuild switch --flake ~/.config/nix#air"
-alias nix-update="nix flake update --flake ~/.config/nix/"
-alias colon3=""
+# completion styling
+# case-insensitivity for autocompletion
+zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}"
 
-# enable starship.rs
-# eval "$(starship init zsh)"
+# built-in completion has color
+zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"
 
-# To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
-[[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+# use fzf menu instead of default one
+zstyle ":completion:*" menu no
+
+# preview folders with fzf with "cd"
+zstyle ":fzf-tab:complete:cd:*" fzf-preview "ls --color $realpath"
+
+# fzf shell integration
+eval "$(fzf --zsh)"
