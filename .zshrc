@@ -21,7 +21,6 @@ export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 
 # User configuration
 # make python normal (add python command alongside python3)
-export PATH="/Users/steak/.virtualenvs/debugpy/bin:$PATH"
 
 # add godot to the path
 export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
@@ -32,6 +31,9 @@ export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
 # aliases
 alias nix-rebuild-air="sudo darwin-rebuild switch --flake ~/.config/nix#air"
 alias nix-update="nix flake update --flake ~/.config/nix/"
+alias python="python3"
+alias pip="pip3"
+alias stow="stow --ignore .DS_Store"
 alias ls="ls --color"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
@@ -57,22 +59,6 @@ zinit light Aloxaf/fzf-tab
 
 # load autocompletions
 autoload -U compinit && compinit
-
-# history stuff
-HISTSIZE=5000
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
-setopt appendhistory
-setopt sharehistory
-setopt hist_ignore_space
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
-setopt hist_ignore_dups
-setopt hist_find_no_dups
-
-# completion styling
-# case-insensitivity for autocompletion
-zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}"
 
 # built-in completion has color
 zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"
