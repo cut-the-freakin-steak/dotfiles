@@ -71,6 +71,3 @@ zstyle ":fzf-tab:complete:cd:*" fzf-preview "ls --color $realpath"
 
 # fzf shell integration
 eval "$(fzf --zsh)"
-
-# enable oh-my-posh
-# eval "$(oh-my-posh init zsh --config $HOME/dotfiles/.config/oh-my-posh/myconfig.toml)"
