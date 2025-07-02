@@ -1,0 +1,27 @@
+# keybindings
+# keybind = cmd+l=clear_screen
+
+# theme
+theme = catppuccin-mocha
+
+# font options
+font-family = IosevkaTerm Nerd Font
+font-family-bold = IosevkaTerm Nerd Font Bold
+font-family-italic = IosevkaTerm Nerd Font Italic
+font-family-bold-italic = IosevkaTerm Nerd Font Bold Italic
+font-size = 29
+
+# cursor options
+cursor-style = block
+cursor-style-blink = false
+adjust-cursor-height = -15%
+shell-integration-features = no-cursor
+
+# window options
+macos-titlebar-style = tabs
+background-opacity = 0.75
+background-blur-radius = 40
+
+# misc options
+shell-integration = zsh
+confirm-close-surface = false
