@@ -29,8 +29,6 @@ export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # aliases
-alias nix-rebuild-air="sudo darwin-rebuild switch --flake ~/.config/nix#air"
-alias nix-update="nix flake update --flake ~/.config/nix/"
 alias python="python3"
 alias pip="python3 -m pip"
 alias stow="stow --adopt --ignore .DS_Store"

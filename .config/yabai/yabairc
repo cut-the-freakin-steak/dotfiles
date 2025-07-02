@@ -15,6 +15,9 @@ yabai -m config mouse_modifier alt # if holding down alt
 yabai -m config mouse_action1 move # if left click + drag, move
 yabai -m config mouse_action2 resize # if right click + drag, move
 
+yabai -m config mouse_follows_focus on
+yabai -m config focus_follows_mouse autofocus
+
 yabai -m mouse_drop_action swap # if window dragged to center of another window, swap them
 
 # disable yabai for specific apps
