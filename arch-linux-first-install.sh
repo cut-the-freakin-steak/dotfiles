@@ -156,6 +156,10 @@ sudo pacman --noconfirm -S xclip
 figlet -f small installing yt-dlp now, boy
 sudo pacman --noconfirm -S yt-dlp
 
+figlet -f small installing zsh and changing default shell to it now, boy
+sudo pacman -noconfirm -S zsh
+chsh -s /bin/zsh
+
 figlet -f small installing the iosevka font now, boy
 sudo pacman --noconfirm -S ttc-iosevka
 sudo pacman --noconfirm -S ttf-iosevka-nerd
@@ -206,6 +210,9 @@ figlet -f small manually installing stuff now, boy
 figlet -f small installing cider v2 now, boy
 figlet -f small you gotta install this one manually, boss :[
 sleep 5
+
+figlet -f small installing oh-my-zsh now, boy
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 figlet -f small installing decky loader now, boy
 wget -O $HOME/.local/share/applications/decky-loader.desktop https://decky.xyz/download
