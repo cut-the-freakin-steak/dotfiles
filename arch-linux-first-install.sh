@@ -218,6 +218,9 @@ figlet -f small using flatpak to install stuff now, boy
 figlet -f small installing flatseal now, boy
 flatpak install -y --system com.github.tchx84.Flatseal
 
+figlet -f small installing sober roblox now, boy
+flatpak install -y --user org.vinegarhq.Sober
+
 #! END OF FLATPAK INSTALLATIONS
 #! START OF MANUAL INSTALLATIONS
 
