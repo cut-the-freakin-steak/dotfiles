@@ -160,6 +160,18 @@ figlet -f small installing zsh and changing default shell to it now, boy
 sudo pacman -noconfirm -S zsh
 chsh -s /bin/zsh
 
+figlet -f small installing java 21 now, boy
+sudo pacman --noconfirm -S jdk21-openjdk
+
+figlet -f small installing calf audio plugins now, boy
+sudo pacman --noconfirm -S calf
+
+figlet -f small installing linux studio plugins now, boy
+sudo pacman --noconfirm -S lsp-plugins
+
+figlet -f small installing prism launcher now, boy
+sudo pacman --noconfirm -S prismlauncher
+
 figlet -f small installing the iosevka font now, boy
 sudo pacman --noconfirm -S ttc-iosevka
 sudo pacman --noconfirm -S ttf-iosevka-nerd
@@ -196,6 +208,9 @@ yay --noconfirm -S termius
 figlet -f small installing vesktop now, boy
 yay --noconfirm -S vesktop-bin
 
+figlet -f small installing openssl-static now, boy, this is a long one
+yay --noconfirm -S openssl-static
+
 #! END OF YAY INSTALLATIONS
 #! START OF FLATPAK INSTALLATIONS
 
@@ -226,7 +241,7 @@ curl -fsSL https://www.emudeck.com/EmuDeck.sh | sh
 
 figlet -f small installing tailscale and trayscale now, boy
 curl -fsSL https://tailscale.com/install.sh | sh
-flatpak install -y --user dev.deedles.Trayscale
+yay --noconfirm -Syu trayscale
 
 figlet -f small installing vencord now, boy
 sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
