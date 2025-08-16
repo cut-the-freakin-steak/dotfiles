@@ -5,6 +5,8 @@
 	compression = 9
 [http]
 	postBuffer = 524288000
+	lowSpeedLimit = 1000
+	lowSpeedTime = 60
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

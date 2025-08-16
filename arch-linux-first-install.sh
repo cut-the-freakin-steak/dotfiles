@@ -13,6 +13,8 @@ cd yay
 makepkg -si
 cd
 
+sudo pacman --noconfirm -S figlet
+
 #! START OF PACMAN INSTALLATIONS
 figlet -f small using pacman to install stuff now, boy
 figlet installing flatpak now, boy
@@ -182,11 +184,11 @@ sudo pacman --noconfirm -S ttf-jetbrains-mono
 sudo pacman --noconfirm -S ttf-jetbrains-mono-nerd
 
 #! END OF PACMAN INSTALLATIONS
-#! START OS YAY INSTALLATIONS
+#! START OF YAY INSTALLATIONS
 
 figlet -f small now using yay to install stuff now, boy
 figlet -f small installing vscode now, boy
-yay --noconfirm -S visual-studio-code-bin
+yay --noconfirm -S visual-studio-code-insiders-bin
 
 figlet -f small installing gear lever now, boy
 yay --noconfirm -S gearlever
@@ -209,7 +211,7 @@ figlet -f small installing vesktop now, boy
 yay --noconfirm -S vesktop-bin
 
 figlet -f small installing openssl-static now, boy, this is a long one
-yay --noconfirm -S openssl-static
+yay --noconfirm -S openssl
 
 #! END OF YAY INSTALLATIONS
 #! START OF FLATPAK INSTALLATIONS
@@ -229,9 +231,6 @@ figlet -f small installing cider v2 now, boy
 figlet -f small you gotta install this one manually, boss :[
 sleep 5
 
-figlet -f small installing oh-my-zsh now, boy
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 figlet -f small installing decky loader now, boy
 wget -O $HOME/.local/share/applications/decky-loader.desktop https://decky.xyz/download
 cd ~/.local/share/applications
@@ -241,6 +240,9 @@ cd ~/Downloads
 
 figlet -f small installing emudeck now, boy
 curl -fsSL https://www.emudeck.com/EmuDeck.sh | sh
+
+figlet f -small installing rust now, boy
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 figlet -f small installing tailscale and trayscale now, boy
 curl -fsSL https://tailscale.com/install.sh | sh
@@ -274,3 +276,6 @@ cd
 
 figlet -f small here are some apps that youll have to install yourself, boy:
 figlet -f small FMOD Studio
+
+figlet -f small installing oh-my-zsh now, boy
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
