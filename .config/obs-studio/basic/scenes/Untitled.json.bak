@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520093700,
+        "prev_ver": 520159233,
         "name": "1. Desktop Audio",
         "uuid": "d8f2b963-3d4d-41b0-8c1e-03a76c3cc9ed",
         "id": "pulse_output_capture",
@@ -44,7 +44,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520093700,
+        "prev_ver": 520159233,
         "name": "2. Mic/Aux",
         "uuid": "9b722621-c474-41ef-bdf5-5356eb82234b",
         "id": "pulse_input_capture",
@@ -55,7 +55,7 @@
         "mixers": 194,
         "sync": 0,
         "flags": 0,
-        "volume": 0.9139607548713684,
+        "volume": 0.878240168094635,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -97,13 +97,13 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520093700,
+            "prev_ver": 520159233,
             "name": "Screen Capture (PipeWire)",
             "uuid": "ff7a8864-5c13-4e30-bade-78f8ad60a976",
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "94d192e6-2189-4da5-baca-d0368e9e876f"
+                "RestoreToken": "318d6b5d-ae42-4280-a543-1ff8e505bf09"
             },
             "mixers": 0,
             "sync": 0,
@@ -123,7 +123,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093700,
+            "prev_ver": 520159233,
             "name": "Recording",
             "uuid": "8a827abc-6848-4edc-97d5-e99063f002fa",
             "id": "scene",
@@ -265,10 +265,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093700,
+            "prev_ver": 520159233,
             "name": "3. Discord Audio",
             "uuid": "bce0bb56-20d2-4bb5-9928-7a89606b61ab",
             "id": "pipewire_audio_application_capture",
@@ -280,7 +281,7 @@
             "mixers": 196,
             "sync": 0,
             "flags": 0,
-            "volume": 0.5287268161773682,
+            "volume": 0.4741431176662445,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -339,13 +340,17 @@
     ],
     "transitions": [],
     "saved_projectors": [],
+    "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": 0,
+    "scaling_level": -8,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
+    "virtual-camera": {
+        "type2": 3
+    },
     "modules": {
         "scripts-tool": [],
         "output-timer": {
