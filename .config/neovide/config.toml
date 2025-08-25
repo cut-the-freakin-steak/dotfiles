@@ -1,0 +1,23 @@
+fork = false
+frame = "full"
+idle = true
+maximized = true
+mouse-cursor-icon = "arrow"
+no-multigrid = false
+srgb = false # platform-specific: false (Linux/macOS) or true (Windows)
+tabs = true
+theme = "auto"
+title-hidden = true
+vsync = true
+wsl = false
+
+[font]
+normal = ["FiraCode Nerd Font"]
+size = 21.0
+
+[box-drawing]
+# "font-glyph", "native" or "selected-native"
+mode = "font-glyph"
+
+[box-drawing.sizes]
+default = [2, 4]  # Thin and thick values respectively, for all sizes
