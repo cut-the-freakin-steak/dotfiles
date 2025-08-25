@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520159233,
+        "prev_ver": 520159234,
         "name": "1. Desktop Audio",
         "uuid": "d8f2b963-3d4d-41b0-8c1e-03a76c3cc9ed",
         "id": "pulse_output_capture",
@@ -44,7 +44,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520159233,
+        "prev_ver": 520159234,
         "name": "2. Mic/Aux",
         "uuid": "9b722621-c474-41ef-bdf5-5356eb82234b",
         "id": "pulse_input_capture",
@@ -55,7 +55,7 @@
         "mixers": 194,
         "sync": 0,
         "flags": 0,
-        "volume": 0.878240168094635,
+        "volume": 0.6342268586158752,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -97,13 +97,13 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520159233,
+            "prev_ver": 520159234,
             "name": "Screen Capture (PipeWire)",
             "uuid": "ff7a8864-5c13-4e30-bade-78f8ad60a976",
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "318d6b5d-ae42-4280-a543-1ff8e505bf09"
+                "RestoreToken": "98f2b0c3-5fb4-4329-9c3c-b0a80355f9a4"
             },
             "mixers": 0,
             "sync": 0,
@@ -123,7 +123,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159233,
+            "prev_ver": 520159234,
             "name": "Recording",
             "uuid": "8a827abc-6848-4edc-97d5-e99063f002fa",
             "id": "scene",
@@ -269,7 +269,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159233,
+            "prev_ver": 520159234,
             "name": "3. Discord Audio",
             "uuid": "bce0bb56-20d2-4bb5-9928-7a89606b61ab",
             "id": "pipewire_audio_application_capture",
@@ -281,10 +281,10 @@
             "mixers": 196,
             "sync": 0,
             "flags": 0,
-            "volume": 0.4741431176662445,
+            "volume": 0.37007349729537964,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -345,7 +345,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -8,
+    "scaling_level": -1,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {

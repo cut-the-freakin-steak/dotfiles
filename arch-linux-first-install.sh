@@ -130,6 +130,7 @@ sudo pacman --noconfirm -S raylib
 
 figlet -f small installing ripgrep now, boy
 sudo pacman --noconfirm -S ripgrep
+sudo pacman --noconfirm -S ripgrep-all
 
 figlet -f small installing spotify now, boy
 sudo pacman --noconfirm -S spotify-launcher
@@ -147,7 +148,7 @@ figlet -f small installing timeshift now, boy
 sudo pacman --noconfirm -S timeshift
 
 figlet -f small installing tree-sitter now, boy
-sudo pacman --noconfirm -S tree-sitter
+sudo pacman --noconfirm -S tree-sitter tree-sitter-cli
 
 figlet -f small installing wine now, boy
 sudo pacman --noconfirm -S wine
@@ -173,6 +174,24 @@ sudo pacman --noconfirm -S lsp-plugins
 
 figlet -f small installing prism launcher now, boy
 sudo pacman --noconfirm -S prismlauncher
+
+figlet -f small installing npm now, boy
+sudo pacman --noconfirm -S npm
+
+figlet -f small installing nodejs now, boy
+sudo pacman --noconfirm -S nodejs
+
+figlet -f small installing neovide now, boy
+sudo pacman --noconfirm -S neovide
+
+figlet -f small installing lazygit now, boy
+sudo pacman --noconfirm -S lazygit
+
+figlet -f small installing gdu now, boy
+sudo pacman --noconfirm -S gdu
+
+figlet -f small installing bottom now, boy
+sudo pacman --noconfirm -S bottom
 
 figlet -f small installing the iosevka font now, boy
 sudo pacman --noconfirm -S ttc-iosevka
@@ -210,8 +229,17 @@ yay --noconfirm -S termius
 figlet -f small installing vesktop now, boy
 yay --noconfirm -S vesktop-bin
 
-figlet -f small installing openssl-static now, boy, this is a long one
-yay --noconfirm -S openssl
+figlet -f small installing sgdboop now, boy
+yay --noconfirm -S sgdboop-bin
+
+figlet -f small installing hedgemodmanager now, boy
+yay --noconfirm -S hedgemodmanager-git
+
+figlet -f small installing the exercism cli tool now, boy
+yay --noconfirm -S exercism-bin
+
+figlet -f small installing wayclip now, boy
+yay --noconfirm -S wayclip
 
 #! END OF YAY INSTALLATIONS
 #! START OF FLATPAK INSTALLATIONS
@@ -222,6 +250,9 @@ flatpak install -y --system com.github.tchx84.Flatseal
 
 figlet -f small installing sober roblox now, boy
 flatpak install -y --user org.vinegarhq.Sober
+
+figlet -f small installing dr. robotniks ring racers now, boy
+flatpak install -y --user org.kartkrew.RingRacers
 
 #! END OF FLATPAK INSTALLATIONS
 #! START OF MANUAL INSTALLATIONS
@@ -254,6 +285,9 @@ sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/
 figlet -f small installing windscribe vpn now, boy
 wget -O $HOME/Downloads/windscribe.zst https://windscribe.com/install/desktop/linux_zst_x64
 sudo pacman --noconfirm -U windscribe.zst
+
+figlet -f small installing lunarvim now, boy
+LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 
 figlet -f small cleaning up now, boy
 cd ~/.local/share/applications
