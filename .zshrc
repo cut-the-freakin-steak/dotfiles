@@ -20,10 +20,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 
 # User configuration
-# make python normal (add python command alongside python3)
 
 # add godot to the path
 export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
+
+# make neovide config path the correct one for me
+export NEOVIDE_CONFIG="/home/steak/dotfiles/.config/neovide"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
