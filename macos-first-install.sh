@@ -4,10 +4,6 @@
 cd
 
 figlet -f small installing prerequisites now, boy
-brew install zsh
-brew install pinentry-mac
-brew install figlet
-
 figlet -f small installing homebrew now, boy
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -18,6 +14,11 @@ brew upgrade
 figlet -f small adding some taps now, boy
 brew tap koekeishiya/formulae
 brew tap DomT4/homebrew-autoupdate
+brew tap riscv-software-src/riscv
+
+brew install zsh
+brew install pinentry-mac
+brew install figlet
 
 figlet -f small making homebrew autoupdate and autoupgrade now, boy
 
@@ -44,6 +45,7 @@ brew install discord
 
 figlet -f small installing visual studio code now, boy
 brew install visual-studio-code
+brew install visual-studio-code@insiders
 
 figlet -f small installing godot and godot-mono now, boy
 brew install godot
@@ -188,6 +190,16 @@ brew install wget
 figlet -f small installing yt-dlp now, boy
 brew install yt-dlp
 
+figlet -f small installing docker cli and gui now, boy
+brew install docker
+brew install docker-credential-helper
+
+figlet -f small installing scons now, boy
+brew install scons
+
+figlet -f small installing retroarch now, boy
+brew install retroarch-metal
+
 #! END OF BREW INSTALLATIONS
 #! START OF MANUAL INSTALLATIONS
 figlet -f small installing vencord now, boy
@@ -208,6 +220,9 @@ wget -O $HOME/Downloads/sideloadly.dmg https://sideloadly.io/SideloadlySetup.dmg
 hdiutil attach /Users/steak/Downloads/sideloadly.dmg
 figlet -f small check finder, at the disk section lol
 sleep 5
+
+figlet -f small installing risc-v tools now, boy
+curl -L https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/download/v12.3.0-1/xpack-riscv-none-elf-gcc-12.3.0-1-darwin-arm64.tar.gz | tar -xz
 
 #! END OF MANUAL INSTALLATIONS
 
