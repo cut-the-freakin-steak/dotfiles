@@ -32,3 +32,6 @@ vim.o.background = "dark"
 
 -- transparency i guess
 -- vim.api.nvim_set_hl(0, "Normal", { guibg = NONE, ctermbg = NONE })
+
+-- set lsp for rust
+vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
