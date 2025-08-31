@@ -25,7 +25,9 @@ export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
 
 # make neovide config path the correct one for me
-export NEOVIDE_CONFIG="/home/steak/dotfiles/.config/neovide"
+export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
+
+export CLIPPY_CONF_DIR="$HOME/dotfiles/.config/clippy"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -35,7 +37,6 @@ alias python="python3"
 alias pip="python3 -m pip"
 alias stow="stow --adopt --ignore .DS_Store"
 alias ls="ls --color"
-alias code="code-insiders"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
