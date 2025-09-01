@@ -23,6 +23,7 @@ export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 
 # add godot to the path
 export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
+export PATH="/home/steak/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
 
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
