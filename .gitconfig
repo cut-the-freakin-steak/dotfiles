@@ -3,3 +3,6 @@
 
 [includeIf "gitdir:/Users/steak"]  # For macOS: default user dirs under /Users/
     path = ~/.gitconfig-macos
+[user]
+	name = cut-the-freakin-steak
+	email = calvaradolopez@proton.me
