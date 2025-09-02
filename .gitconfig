@@ -1,8 +1,21 @@
-[includeIf "gitdir:/home/steak"]     # For Linux: your home is likely /home/username/
-    path = ~/.gitconfig-linux
-
-[includeIf "gitdir:/Users/steak"]  # For macOS: default user dirs under /Users/
-    path = ~/.gitconfig-macos
 [user]
 	name = cut-the-freakin-steak
 	email = calvaradolopez@proton.me
+[core]
+	compression = 9
+[http]
+	postBuffer = 524288000
+	lowSpeedLimit = 1000
+	lowSpeedTime = 60
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# decide where the gh auth helper is
+[includeIf "gitdir:/home/steak"]
+    path = ~/.gitconfig-linux
+
+[includeIf "gitdir:/Users/steak"]
+    path = ~/.gitconfig-macos

@@ -1,17 +1,3 @@
-[user]
-	name = cut-the-freakin-steak
-	email = calvaradolpez7@gmail.com
-[core]
-	compression = 9
-[http]
-	postBuffer = 524288000
-	lowSpeedLimit = 1000
-	lowSpeedTime = 60
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [credential "https://github.com"]
   helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
