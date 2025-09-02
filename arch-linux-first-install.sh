@@ -202,6 +202,10 @@ figlet -f small installing the jetbrains mono font now, boy
 sudo pacman --noconfirm -S ttf-jetbrains-mono
 sudo pacman --noconfirm -S ttf-jetbrains-mono-nerd
 
+figlet -f small installing the fira code font now, boy
+sudo pacman --noconfirm -S ttf-fira-code
+sudo pacman --noconfirm -S ttf-firacode-nerd
+
 #! END OF PACMAN INSTALLATIONS
 #! START OF YAY INSTALLATIONS
 

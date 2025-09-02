@@ -20,13 +20,6 @@ vim.opt.fillchars = { eob = " " }
 vim.opt.wrap = true
 vim.opt.linebreak = true
 
--- add functionality for gdscript stuff
--- local godot_project_file = vim.fn.getcwd() .. "/project.godot"
---
--- if godot_project_file then
---   vim.fn.serverstart "./godothost"
--- end
-
 -- chooses what color theme nvim uses
 vim.o.background = "dark"
 
@@ -35,3 +28,51 @@ vim.o.background = "dark"
 
 -- set lsp for rust
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+if vim.g.neovide then
+  vim.g.neovide_scale_factor = 0.85
+end
+
+-- turn off bitch ass swap file warning
+vim.opt.swapfile = false
+
+-- GODOT STUFF
+vim.lsp.enable("gdscript")
+vim.lsp.enable("gdshader_lsp")
+
+-- -- function to find Godot project root directory
+-- local function find_godot_project_root()
+--   local cwd = vim.fn.getcwd()
+--   local search_paths = { "", "/.." }
+--
+--   for _, relative_path in ipairs(search_paths) do
+--     local project_file = cwd .. relative_path .. "/project.godot"
+--     if vim.uv.fs_stat(project_file) then
+--       return cwd .. relative_path
+--     end
+--   end
+--
+--   return nil
+-- end
+--
+-- -- function to check if server is already running
+-- local function is_server_running(project_path)
+--   local server_pipe = project_path .. "/server.pipe"
+--   return vim.uv.fs_stat(server_pipe) ~= nil
+-- end
+--
+-- -- function to start godot server if needed
+-- local function start_godot_server_if_needed()
+--   local godot_project_path = find_godot_project_root()
+--
+--   if godot_project_path and not is_server_running(godot_project_path) then
+--     vim.fn.serverstart(godot_project_path .. "/server.pipe")
+--     return true
+--   end
+--
+--   return false
+-- end
+--
+-- -- main execution
+-- start_godot_server_if_needed()
+-- vim.keymap.set("n", "<F9>", start_godot_server_if_needed)
