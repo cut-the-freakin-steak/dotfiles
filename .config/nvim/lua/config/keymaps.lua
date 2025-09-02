@@ -6,5 +6,3 @@
 vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
 -- use compiler extension to open compiler window
 vim.keymap.set("n", "<leader>gd", "<cmd>make<cr>")
-
--- vim.keymap.set("i", "<Tab>", LazyVim.cmp.confirm({ select = auto_select }))

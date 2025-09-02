@@ -28,8 +28,6 @@ export PATH="/home/steak/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
 
-export CLIPPY_CONF_DIR="$HOME/dotfiles/.config/clippy"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
