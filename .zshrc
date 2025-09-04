@@ -14,6 +14,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
 
+# speaking of git, set up .gitconfig
+case "$(uname -s)" in
+  Linux*)
+    export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
+    ;;
+  Darwin*)
+    export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
+    ;;
+  *)
+    export GIT_CONFIG_GLOBAL="$HOME/.gitconfig"
+    ;;
+esac
+
 source $ZSH/oh-my-zsh.sh
 
 # Added by Windsurf
@@ -36,6 +49,9 @@ alias python="python3"
 alias pip="python3 -m pip"
 alias stow="stow --adopt --ignore .DS_Store"
 alias ls="ls --color"
+
+
+
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
