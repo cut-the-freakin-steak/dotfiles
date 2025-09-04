@@ -3,6 +3,6 @@
 -- Add any additional keymaps here
 
 -- see full diagnostic message in case it goes out of screen bounds
-vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
+vim.keymap.set("n", "<leader>od", vim.diagnostic.open_float)
 -- use compiler extension to open compiler window
 vim.keymap.set("n", "<leader>gd", "<cmd>make<cr>")
