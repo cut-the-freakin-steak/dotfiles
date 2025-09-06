@@ -1,0 +1,19 @@
+/* OLED Partial */
+:root {
+    --q-dark: #080808!important;
+}
+
+body.window-glass[window-blurred] {
+    background-color: #000!important; 
+}
+
+body.window-glass,
+html.window-glass {
+    transition:
+        background-color 0.21s linear;
+    background-color: transparent!important; 
+}
+
+body.body--dark .q-menu {
+    background-color: #080808e6!important;
+}

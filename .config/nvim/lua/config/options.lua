@@ -3,15 +3,16 @@
 -- Add any additional options here
 
 -- tabs to 2 spaces
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.o.expandtab = true
+vim.o.tabstop = 4
+vim.cmd.softtabstop = 4
+vim.o.shiftwidth = 4
+
 -- python buffoonery for 2 space tab
-vim.cmd("let g:python_recommended_style=0")
+-- vim.cmd("let g:python_recommended_style=0")
 
 -- turn on numbers on the left side of the editor
-vim.cmd("set number")
+vim.o.number = true
 
 -- get rid of the tildes at the bottom of the file
 vim.opt.fillchars = { eob = " " }
@@ -30,56 +31,15 @@ vim.o.background = "dark"
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
 
 if vim.g.neovide then
-  local os = vim.uv.os_uname().sysname
-  if os == "Linux" then
-    vim.g.neovide_scale_factor = 0.85
-  end
+    local os = vim.uv.os_uname().sysname
+    if os == "Linux" then
+        vim.g.neovide_scale_factor = 0.85
+    end
 
-  if os == "Darwin" then
-    vim.g.neovide_scale_factor = 1.10
-  end
+    if os == "Darwin" then
+        vim.g.neovide_scale_factor = 1.10
+    end
 end
 
 -- turn off bitch ass swap file warning
 vim.opt.swapfile = false
-
--- GODOT STUFF
-vim.lsp.enable("gdscript")
-vim.lsp.enable("gdshader_lsp")
-
--- -- function to find Godot project root directory
--- local function find_godot_project_root()
---   local cwd = vim.fn.getcwd()
---   local search_paths = { "", "/.." }
---
---   for _, relative_path in ipairs(search_paths) do
---     local project_file = cwd .. relative_path .. "/project.godot"
---     if vim.uv.fs_stat(project_file) then
---       return cwd .. relative_path
---     end
---   end
---
---   return nil
--- end
---
--- -- function to check if server is already running
--- local function is_server_running(project_path)
---   local server_pipe = project_path .. "/server.pipe"
---   return vim.uv.fs_stat(server_pipe) ~= nil
--- end
---
--- -- function to start godot server if needed
--- local function start_godot_server_if_needed()
---   local godot_project_path = find_godot_project_root()
---
---   if godot_project_path and not is_server_running(godot_project_path) then
---     vim.fn.serverstart(godot_project_path .. "/server.pipe")
---     return true
---   end
---
---   return false
--- end
---
--- -- main execution
--- start_godot_server_if_needed()
--- vim.keymap.set("n", "<F9>", start_godot_server_if_needed)

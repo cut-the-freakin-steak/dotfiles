@@ -380,10 +380,10 @@
             "versioned_id": "pipewire_audio_application_capture",
             "settings": {
                 "AppToAdd": "easyeffects",
+                "TargetName": "Discord",
                 "CaptureMode": 0,
                 "ExceptApp": true,
-                "apps": [],
-                "TargetName": "Discord"
+                "apps": []
             },
             "mixers": 193,
             "sync": 0,
@@ -442,9 +442,6 @@
     "scaling_level": -4,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
-    "virtual-camera": {
-        "type2": 3
-    },
     "modules": {
         "scripts-tool": [],
         "output-timer": {
