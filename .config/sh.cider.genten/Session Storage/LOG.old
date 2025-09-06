@@ -1,0 +1,15 @@
+2025/09/06-11:15:58.089 3fc3 Reusing MANIFEST /home/steak/.config/sh.cider.genten/Session Storage/MANIFEST-000001
+2025/09/06-11:15:58.090 3fc3 Recovering log #56
+2025/09/06-11:15:58.090 3fc3 Reusing old log /home/steak/.config/sh.cider.genten/Session Storage/000056.log 
+2025/09/06-11:15:58.090 3fc4 Compacting 4@0 + 1@1 files
+2025/09/06-11:15:58.094 3fc4 Generated table #59@0: 96 keys, 32586 bytes
+2025/09/06-11:15:58.094 3fc4 Compacted 4@0 + 1@1 files => 32586 bytes
+2025/09/06-11:15:58.095 3fc4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/06-11:15:58.095 3fc4 Delete type=2 #45
+2025/09/06-11:15:58.095 3fc4 Delete type=2 #48
+2025/09/06-11:15:58.095 3fc4 Delete type=2 #51
+2025/09/06-11:15:58.095 3fc4 Delete type=2 #54
+2025/09/06-11:15:58.095 3fc4 Delete type=2 #57
+2025/09/06-11:24:37.472 4156 Level-0 table #61: started
+2025/09/06-11:24:37.474 4156 Level-0 table #61: 30940 bytes OK
+2025/09/06-11:24:37.477 4156 Delete type=0 #56

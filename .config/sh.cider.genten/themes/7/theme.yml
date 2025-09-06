@@ -1,0 +1,15 @@
+name: OLED by cryptofyre
+author: cryptofyre
+stylesheets:
+  - file: main.scss
+    name: Default Style
+    description: Introduces an OLED theme set, and adds tab highlights with border
+      accents. (Mica/Tabbed Compatible)
+  - file: main-full.scss
+    name: Override Background
+    description: Overrides background to be OLED black, optional. (Overrides Mica/Tabbed)
+  - file: highlights.scss
+    name: Highlights
+    description: Introduces highlights on the tab bar, optional.
+marketplaceID: 7
+version: 1.0.1
