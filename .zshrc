@@ -49,9 +49,7 @@ alias python="python3"
 alias pip="python3 -m pip"
 alias stow="stow --adopt --ignore .DS_Store"
 alias ls="ls --color"
-
-
-
+alias arch-update-system="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
