@@ -6,7 +6,7 @@
 	compression = 9
 
 [http]
-	postBuffer = 1048576000
+    postBuffer = 1048576000
 	lowSpeedLimit = 1000
 	lowSpeedTime = 60
 
