@@ -2,8 +2,8 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
--- tabs to 2 spaces
-vim.o.expandtab = true
+-- tabs to 4 spaces, still tab character
+vim.o.expandtab = false
 vim.o.tabstop = 4
 vim.cmd.softtabstop = 4
 vim.o.shiftwidth = 4
@@ -31,14 +31,14 @@ vim.o.background = "dark"
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
 
 if vim.g.neovide then
-    local os = vim.uv.os_uname().sysname
-    if os == "Linux" then
-        vim.g.neovide_scale_factor = 0.85
-    end
+	local os = vim.uv.os_uname().sysname
+	if os == "Linux" then
+		vim.g.neovide_scale_factor = 0.85
+	end
 
-    if os == "Darwin" then
-        vim.g.neovide_scale_factor = 1.10
-    end
+	if os == "Darwin" then
+		vim.g.neovide_scale_factor = 1.10
+	end
 end
 
 -- turn off bitch ass swap file warning
