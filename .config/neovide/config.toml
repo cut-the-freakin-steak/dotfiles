@@ -1,11 +1,11 @@
 fork = true
 frame = "none"
 idle = true
-maximized = true
+maximized = false
 mouse-cursor-icon = "arrow"
 no-multigrid = false
 srgb = false                # platform-specific: false (Linux/macOS) or true (Windows)
-tabs = false
+tabs = true
 theme = "auto"
 title-hidden = true
 vsync = true
