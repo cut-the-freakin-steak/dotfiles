@@ -41,6 +41,9 @@ export PATH="/home/steak/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
 
+# export default python venv
+# export VIRTUAL_ENV="/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

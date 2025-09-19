@@ -8,7 +8,7 @@ vim.o.tabstop = 4
 vim.cmd.softtabstop = 4
 vim.o.shiftwidth = 4
 
--- python buffoonery for 2 space tab
+-- python buffoonery for tab the way i want them
 -- vim.cmd("let g:python_recommended_style=0")
 
 -- turn on numbers on the left side of the editor
@@ -27,8 +27,10 @@ vim.o.background = "dark"
 -- transparency i guess
 -- vim.api.nvim_set_hl(0, "Normal", { guibg = NONE, ctermbg = NONE })
 
--- set lsp for rust
-vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+-- set lsps
+vim.g.lazyvim_rust_diagnostics = "rust-analyzer" -- rust
+vim.g.lazyvim_python_lsp = "ruff" -- python
+vim.lsp.enable("ty") -- python again
 
 if vim.g.neovide then
 	local os = vim.uv.os_uname().sysname

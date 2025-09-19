@@ -2,7 +2,7 @@
 # keybind = cmd+l=clear_screen
 
 # theme
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 
 # font options
 font-family = FiraCode Nerd Font
