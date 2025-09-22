@@ -18,6 +18,7 @@ plugins=(git)
 case "$(uname -s)" in
   Linux*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
+	alias godot4="godot.x11.opt.tools.64"
     ;;
   Darwin*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
@@ -35,8 +36,7 @@ export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 # User configuration
 
 # add godot to the path
-export PATH="/Applications/Godot.app/Contents/MacOS:$PATH"
-export PATH="/home/steak/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
+export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
 
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
