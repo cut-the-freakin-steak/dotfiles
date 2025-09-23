@@ -1,13 +1,54 @@
 return {
 	"folke/snacks.nvim",
-	explorer = {
-		filtered_items = {
-			hide_by_name = {
+	opts = {
+		explorer = {
+			hidden = true, -- show dotfiles etc
+			ignored = true, -- *actually ignore files listed in .gitignore* or ignore patterns
+			exclude = {
+				".git",
+				"__pycache__",
+				"node_modules",
+				"*.tmp",
+				"*.bak",
 				".DS_Store",
 			},
-			hide_by_pattern = {
-				".*%.import$", -- Hides all .log files
-				".*%.bak$", -- Hides all .bak files
+		},
+		picker = {
+			hidden = true,
+			ignored = true,
+			exclude = {
+				".git",
+				"__pycache__",
+				"node_modules",
+				"*.tmp",
+				"*.log",
+				".DS_Store",
+			},
+			sources = {
+				files = {
+					hidden = true,
+					ignored = true,
+					exclude = {
+						".git",
+						"__pycache__",
+						"node_modules",
+						"*.log",
+						"*.tmp",
+						".DS_Store",
+					},
+				},
+				explorer = {
+					hidden = true,
+					ignored = true,
+					exclude = {
+						".git",
+						"__pycache__",
+						"node_modules",
+						"*.tmp",
+						"*.bak",
+						".DS_Store",
+					},
+				},
 			},
 		},
 	},
