@@ -1,19 +1,54 @@
 return {
 	"folke/snacks.nvim",
-	explorer = {
-		enabled = true,
-		-- filters / patterns to ignore in explorer:
-		exclude = { ".DS_Store", "*.import" },
-		hidden = false, -- whether to show hidden files/folders
-		ignored = true,
-	},
-	picker = {
-		enabled = true,
-		sources = {
-			files = {
-				exclude = { ".DS_Store", "*.import" },
-				hidden = false,
-				ignored = true, -- this might hide things ignored by gitignore (if implemented)
+	opts = {
+		explorer = {
+			hidden = true, -- show dotfiles etc
+			ignored = true, -- *actually ignore files listed in .gitignore* or ignore patterns
+			exclude = {
+				".git",
+				"__pycache__",
+				"node_modules",
+				"*.tmp",
+				"*.bak",
+				".DS_Store",
+			},
+		},
+		picker = {
+			hidden = true,
+			ignored = true,
+			exclude = {
+				".git",
+				"__pycache__",
+				"node_modules",
+				"*.tmp",
+				"*.log",
+				".DS_Store",
+			},
+			sources = {
+				files = {
+					hidden = true,
+					ignored = true,
+					exclude = {
+						".git",
+						"__pycache__",
+						"node_modules",
+						"*.log",
+						"*.tmp",
+						".DS_Store",
+					},
+				},
+				explorer = {
+					hidden = true,
+					ignored = true,
+					exclude = {
+						".git",
+						"__pycache__",
+						"node_modules",
+						"*.tmp",
+						"*.bak",
+						".DS_Store",
+					},
+				},
 			},
 		},
 		hidden = false,
