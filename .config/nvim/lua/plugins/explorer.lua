@@ -1,14 +1,22 @@
 return {
 	"folke/snacks.nvim",
 	explorer = {
-		filtered_items = {
-			hide_by_name = {
-				".DS_Store",
-			},
-			hide_by_pattern = {
-				".*%.import$", -- Hides all .log files
-				".*%.bak$", -- Hides all .bak files
+		enabled = true,
+		-- filters / patterns to ignore in explorer:
+		exclude = { ".DS_Store", "*.import" },
+		hidden = false, -- whether to show hidden files/folders
+		ignored = true,
+	},
+	picker = {
+		enabled = true,
+		sources = {
+			files = {
+				exclude = { ".DS_Store", "*.import" },
+				hidden = false,
+				ignored = true, -- this might hide things ignored by gitignore (if implemented)
 			},
 		},
+		hidden = false,
+		ignored = true,
 	},
 }
