@@ -200,6 +200,9 @@ brew install scons
 figlet -f small installing retroarch now, boy
 brew install retroarch-metal
 
+figlet -f small installing binaryen now, boy
+brew install binaryen
+
 #! END OF BREW INSTALLATIONS
 #! START OF MANUAL INSTALLATIONS
 figlet -f small installing vencord now, boy

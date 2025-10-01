@@ -29,8 +29,7 @@ vim.o.background = "dark"
 
 -- set lsps
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer" -- rust
-vim.g.lazyvim_python_lsp = "ruff" -- python
-vim.lsp.enable("ty") -- python again
+vim.g.lazyvim_python_lsp = "basedpyright"
 
 if vim.g.neovide then
 	local os = vim.uv.os_uname().sysname
