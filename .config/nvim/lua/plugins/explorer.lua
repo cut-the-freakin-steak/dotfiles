@@ -25,5 +25,7 @@ return {
 				},
 			},
 		},
+		hidden = false,
+		ignored = true,
 	},
 }
