@@ -60,7 +60,7 @@
         "volume": 0.6342268586158752,
         "balance": 0.5,
         "enabled": true,
-        "muted": true,
+        "muted": false,
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -343,7 +343,7 @@
             "volume": 0.37007349729537964,
             "balance": 0.5,
             "enabled": true,
-            "muted": true,
+            "muted": false,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -433,15 +433,7 @@
         }
     ],
     "transitions": [],
-    "saved_projectors": [
-        {
-            "name": "Recording",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAAAAAAAAAAABYcAAAOvAAAAAAAAAAAAAAWHAAADrwAAAAEAAAAABYgAAAAAAAAAAAAABYcAAAOv",
-            "alwaysOnTopOverridden": false
-        }
-    ],
+    "saved_projectors": [],
     "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
