@@ -1,57 +1,31 @@
 return {
-	-- "folke/snacks.nvim",
-	-- opts = {
-	-- 	explorer = {
-	-- 		hidden = true, -- show dotfiles etc
-	-- 		ignored = true, -- *actually ignore files listed in .gitignore* or ignore patterns
-	-- 		exclude = {
-	-- 			".git",
-	-- 			"__pycache__",
-	-- 			"node_modules",
-	-- 			"*.tmp",
-	-- 			"*.bak",
-	-- 			".DS_Store",
-	-- 		},
-	-- 	},
-	-- 	picker = {
-	-- 		hidden = true,
-	-- 		ignored = true,
-	-- 		exclude = {
-	-- 			".git",
-	-- 			"__pycache__",
-	-- 			"node_modules",
-	-- 			"*.tmp",
-	-- 			"*.log",
-	-- 			".DS_Store",
-	-- 		},
-	-- 		sources = {
-	-- 			files = {
-	-- 				hidden = true,
-	-- 				ignored = true,
-	-- 				exclude = {
-	-- 					".git",
-	-- 					"__pycache__",
-	-- 					"node_modules",
-	-- 					"*.log",
-	-- 					"*.tmp",
-	-- 					".DS_Store",
-	-- 				},
-	-- 			},
-	-- 			explorer = {
-	-- 				hidden = true,
-	-- 				ignored = true,
-	-- 				exclude = {
-	-- 					".git",
-	-- 					"__pycache__",
-	-- 					"node_modules",
-	-- 					"*.tmp",
-	-- 					"*.bak",
-	-- 					".DS_Store",
-	-- 				},
-	-- 			},
-	-- 		},
-	-- 	},
-	-- 	hidden = false,
-	-- 	ignored = true,
-	-- },
+	"folke/snacks.nvim",
+	opts = {
+		explorer = {
+			hidden = false, -- don’t show dotfiles
+			ignored = false, -- hide gitignored files
+			exclude = {
+				".git",
+				"__pycache__",
+				"node_modules",
+				"*.tmp",
+				"*.bak",
+				".DS_Store",
+			},
+		},
+		picker = {
+			sources = {
+				explorer = {
+					hidden = false,
+					ignored = false,
+				},
+				files = {
+					hidden = false,
+					ignored = false,
+				},
+			},
+		},
+		hidden = false,
+		ignored = true,
+	},
 }
