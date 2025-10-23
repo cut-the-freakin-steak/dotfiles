@@ -1,12 +1,12 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520159234,
+        "prev_ver": 536870913,
         "name": "Easy Effects Source",
         "uuid": "d8f2b963-3d4d-41b0-8c1e-03a76c3cc9ed",
         "id": "pulse_output_capture",
         "versioned_id": "pulse_output_capture",
         "settings": {
-            "device_id": "easyeffects_sink.monitor"
+            "device_id": "default"
         },
         "mixers": 192,
         "sync": 0,
@@ -46,7 +46,7 @@
         }
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520159234,
+        "prev_ver": 536870913,
         "name": "2. Mic/Aux",
         "uuid": "9b722621-c474-41ef-bdf5-5356eb82234b",
         "id": "pulse_input_capture",
@@ -57,7 +57,7 @@
         "mixers": 194,
         "sync": 0,
         "flags": 2,
-        "volume": 0.6342268586158752,
+        "volume": 0.8867056965827942,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -87,7 +87,33 @@
         "deinterlace_mode": 0,
         "deinterlace_field_order": 0,
         "monitoring_type": 0,
-        "private_settings": {}
+        "private_settings": {},
+        "filters": [
+            {
+                "prev_ver": 536870913,
+                "name": "Noise Suppression",
+                "uuid": "8e0fc37e-af97-4704-aa0b-2863a80a6945",
+                "id": "noise_suppress_filter",
+                "versioned_id": "noise_suppress_filter_v2",
+                "settings": {},
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            }
+        ]
     },
     "current_scene": "Recording",
     "current_program_scene": "Recording",
@@ -99,7 +125,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520159234,
+            "prev_ver": 536870913,
             "name": "Screen Capture (PipeWire)",
             "uuid": "ff7a8864-5c13-4e30-bade-78f8ad60a976",
             "id": "pipewire-screen-capture-source",
@@ -125,7 +151,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159234,
+            "prev_ver": 536870913,
             "name": "Recording",
             "uuid": "8a827abc-6848-4edc-97d5-e99063f002fa",
             "id": "scene",
@@ -328,7 +354,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159234,
+            "prev_ver": 536870913,
             "name": "3. Discord Audio",
             "uuid": "bce0bb56-20d2-4bb5-9928-7a89606b61ab",
             "id": "pipewire_audio_application_capture",
@@ -340,7 +366,7 @@
             "mixers": 196,
             "sync": 0,
             "flags": 0,
-            "volume": 0.37007349729537964,
+            "volume": 0.26850539445877075,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -373,7 +399,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159234,
+            "prev_ver": 536870913,
             "name": "1. Desktop Audio",
             "uuid": "6e20117c-3c89-4106-9cdc-0d2ff5fde73b",
             "id": "pipewire_audio_application_capture",
@@ -388,7 +414,7 @@
             "mixers": 193,
             "sync": 0,
             "flags": 0,
-            "volume": 0.7491581439971924,
+            "volume": 0.7699615359306335,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
