@@ -6,7 +6,7 @@
 	compression = 9
 
 [http]
-	postBuffer = 1048576000
+    postBuffer = 1048576000
 	lowSpeedLimit = 1000
 	lowSpeedTime = 60
 
@@ -16,11 +16,11 @@
 	process = git-lfs filter-process
 	required = true
 
-[credential]
-    helper = !/opt/homebrew/bin/gh auth git-credential
-
 [credential "https://github.com"]
-    helper = !/opt/homebrew/bin/gh auth git-credential
-
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-    helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential]
+	helper = /opt/homebrew/bin/gh auth git-credential
