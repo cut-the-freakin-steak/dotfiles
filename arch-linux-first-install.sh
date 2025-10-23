@@ -120,7 +120,7 @@ figlet -f small installing obs now, boy
 sudo pacman --noconfirm -S obs-studio
 
 figlet -f small installing python now, boy
-sudo pacman --noconfirm -S python
+sudo pacman --noconfirm -S python python-pip python-pipx
 
 figlet -f small installing range-v3 now, boy
 sudo pacman --noconfirm -S range-v3
@@ -205,6 +205,13 @@ sudo pacman --noconfirm -S ttf-jetbrains-mono-nerd
 figlet -f small installing the fira code font now, boy
 sudo pacman --noconfirm -S ttf-fira-code
 sudo pacman --noconfirm -S ttf-firacode-nerd
+
+figlet -f small installing mingw now, boy
+sudo pacman --noconfirm -S mingw-w64
+
+figlet -f small installing neovim clipboards now, boy
+sudo pacman --noconfirm -S wl-clipboard
+sudo pacman --noconfirm -S xclip
 
 #! END OF PACMAN INSTALLATIONS
 #! START OF YAY INSTALLATIONS
@@ -292,6 +299,9 @@ sudo pacman --noconfirm -U windscribe.zst
 
 figlet -f small installing lunarvim now, boy
 LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
+
+figlet -f small installing conan c/c++ package manager now, boy
+pip install conan
 
 figlet -f small cleaning up now, boy
 cd ~/.local/share/applications
