@@ -7,8 +7,8 @@
 
 [http]
 	postBuffer = 1048576000
-	lowSpeedLimit = 1000
-	lowSpeedTime = 60
+	lowSpeedLimit = 0
+	lowSpeedTime = 999999
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

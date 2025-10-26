@@ -2,7 +2,7 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
--- tabs to 4 spaces, still tab character
+-- tabs to 4 whitespaces, still tab character
 vim.o.expandtab = false
 vim.o.tabstop = 4
 vim.cmd.softtabstop = 4
@@ -32,6 +32,9 @@ if vim.g.neovide then
 	local os = vim.uv.os_uname().sysname
 	if os == "Linux" then
 		vim.g.neovide_scale_factor = 0.85
+
+		-- set nvim clipboard utility to something else
+		vim.o.clipboard = "unnamedplus"
 	end
 
 	if os == "Darwin" then
