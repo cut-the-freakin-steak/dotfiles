@@ -18,7 +18,9 @@ plugins=(git)
 case "$(uname -s)" in
   Linux*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
-	alias godot4="godot.x11.opt.tools.64"
+	# add godot to the path
+	export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
+	# alias godot4="godot.x11.opt.tools.64"
     ;;
   Darwin*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
@@ -34,10 +36,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
 
 # User configuration
-
-# add godot to the path
-export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
-
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
 
@@ -53,6 +51,7 @@ alias pip="python3 -m pip"
 alias stow="stow --adopt --ignore .DS_Store"
 alias ls="ls --color"
 alias arch-update-system="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm"
+alias godot4="godot"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
