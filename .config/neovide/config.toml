@@ -12,7 +12,7 @@ vsync = true
 wsl = false
 
 [font]
-normal = ["FiraCode Nerd Font"]
+normal = ["Lilex Nerd Font"]
 size = 20.0
 
 [box-drawing]
