@@ -1,0 +1,1 @@
+/home/steak/dotfiles/.p10k.zsh

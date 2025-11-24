@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 536870913,
+        "prev_ver": 536870914,
         "name": "Easy Effects Source",
         "uuid": "d8f2b963-3d4d-41b0-8c1e-03a76c3cc9ed",
         "id": "pulse_output_capture",
@@ -46,7 +46,7 @@
         }
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870913,
+        "prev_ver": 536870914,
         "name": "2. Mic/Aux",
         "uuid": "9b722621-c474-41ef-bdf5-5356eb82234b",
         "id": "pulse_input_capture",
@@ -57,7 +57,7 @@
         "mixers": 194,
         "sync": 0,
         "flags": 2,
-        "volume": 0.8867056965827942,
+        "volume": 0.7105764746665955,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -90,14 +90,14 @@
         "private_settings": {},
         "filters": [
             {
-                "prev_ver": 536870913,
+                "prev_ver": 536870914,
                 "name": "Noise Gate",
                 "uuid": "d498e01a-c98c-42e2-9fb1-6cb472e19c11",
                 "id": "noise_gate_filter",
                 "versioned_id": "noise_gate_filter",
                 "settings": {
-                    "close_threshold": -44.0,
-                    "open_threshold": -42.0
+                    "open_threshold": -42.0,
+                    "close_threshold": -44.0
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -128,13 +128,13 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "Screen Capture (PipeWire)",
             "uuid": "ff7a8864-5c13-4e30-bade-78f8ad60a976",
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "09767203-0f80-423c-a107-01781564b65c"
+                "RestoreToken": "e4943ad3-a07e-4452-8df3-89cf75922f3d"
             },
             "mixers": 0,
             "sync": 0,
@@ -154,7 +154,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "Recording",
             "uuid": "8a827abc-6848-4edc-97d5-e99063f002fa",
             "id": "scene",
@@ -188,16 +188,16 @@
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
+                            "x": -1.5,
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.8510638475418091,
+                            "y": 0.8510638475418091
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.7180851101875305,
+                            "y": 0.7180851101875305
                         },
                         "bounds": {
                             "x": 0.0,
@@ -239,7 +239,7 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
+                            "x": -178.0,
                             "y": 0.0
                         },
                         "pos_rel": {
@@ -247,8 +247,8 @@
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1.185185194015503,
+                            "y": 1.185185194015503
                         },
                         "scale_rel": {
                             "x": 1.0,
@@ -294,7 +294,7 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
+                            "x": -178.0,
                             "y": 0.0
                         },
                         "pos_rel": {
@@ -302,8 +302,8 @@
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1.185185194015503,
+                            "y": 1.185185194015503
                         },
                         "scale_rel": {
                             "x": 1.0,
@@ -357,7 +357,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "1. Desktop Audio",
             "uuid": "650c8f6b-7659-44fd-ae50-02690539a5bd",
             "id": "pipewire_audio_application_capture",
@@ -391,7 +391,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "3. Discord",
             "uuid": "aca20d2e-4da4-48f3-b15a-3345185227fe",
             "id": "pipewire_audio_application_capture",
@@ -453,7 +453,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -1,
+    "scaling_level": -9,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -483,7 +483,7 @@
     },
     "resolution": {
         "x": 1920,
-        "y": 1080
+        "y": 1280
     },
     "version": 2
 }

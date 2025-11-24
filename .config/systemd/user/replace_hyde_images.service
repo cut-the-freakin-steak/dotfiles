@@ -1,0 +1,9 @@
+[Unit]
+Description=Replace default HyDE images with my own Rain World cutscene screenshots :3
+
+[Service]
+ExecStartPre=/bin/sleep 0.1
+ExecStart=/home/steak/dotfiles/.config/systemd/user/replace_hyde_images.sh
+
+[Install]
+WantedBy=default.target
