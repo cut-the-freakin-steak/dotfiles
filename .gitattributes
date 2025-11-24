@@ -3,3 +3,6 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
 .config/hyde/themes/* filter=lfs diff=lfs merge=lfs -text
+*.set filter=lfs diff=lfs merge=lfs -text
+*.quad filter=lfs diff=lfs merge=lfs -text
+*.sqre filter=lfs diff=lfs merge=lfs -text
