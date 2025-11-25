@@ -9,3 +9,5 @@ cp -f /home/steak/dotfiles/.cache/hyde/wallpapers/rw_gbworms.png /home/steak/.ca
 cp -f /home/steak/dotfiles/.cache/hyde/wallpapers/rw_gbworms.png /home/steak/.cache/hyde/wallpapers/hyprlock.png
 
 hydectl wallpaper --global set /home/steak/dotfiles/.cache/hyde/wallpapers/rw_gbworms.png
+
+hyprctl setcursor WiiPointer 43
