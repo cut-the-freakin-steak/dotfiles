@@ -5,3 +5,7 @@
 
 [hyprland]
 gtk_theme = "Tokyo-Night"
+
+[battery.notify]
+interval = 0
+timer = 0

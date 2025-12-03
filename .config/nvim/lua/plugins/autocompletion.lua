@@ -2,7 +2,9 @@ return {
 	"saghen/blink.cmp",
 	opts = function(_, opts)
 		opts.keymap = {
-			["<Tab>"] = {
+			["<Tab>"] = { "select_next", "fallback" },
+			["<S-Tab>"] = { "select_prev", "fallback" },
+			["<Return>"] = {
 				function(cmp)
 					if cmp.snippet_active() then
 						return cmp.accept()
@@ -13,7 +15,6 @@ return {
 				"snippet_forward",
 				"fallback",
 			},
-			["<S-Tab>"] = { "select_prev" },
 		}
 	end,
 }
