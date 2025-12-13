@@ -4,8 +4,32 @@
 "$schema" = "https://raw.githubusercontent.com/HyDE-Project/HyDE/refs/heads/master/Configs/.local/share/hyde/schema/config.toml.json"
 
 [hyprland]
+browser = "zen"
 gtk_theme = "Tokyo-Night"
+color_scheme = "prefer-dark"
+cursor_size = 43
+cursor_theme = "WiiPointer"
+editor = "neovide"
+explorer = "dolphin"
+font = "Canterell"
+font_antialiasing = "rgba"
+font_hinting = "full"
+font_size = 10
+terminal = "kitty"
 
 [battery.notify]
-interval = 0
-timer = 0
+interval = 4400000
+notify = 0
+timer = 40040494949
+
+[battery.notify.threshold]
+low = 25
+critical = 10
+full = 1
+unplug = 1
+
+[wallpaper]
+custom_paths = ["~/dotfiles/.cache/hyde/wallpapers/"]
+
+[waybar]
+icon_size = 12
