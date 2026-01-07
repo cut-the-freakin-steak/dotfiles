@@ -24,3 +24,5 @@
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential]
 	helper = /opt/homebrew/bin/gh auth git-credential
+[pull]
+	rebase = false
