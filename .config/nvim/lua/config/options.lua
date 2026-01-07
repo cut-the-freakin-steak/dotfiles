@@ -29,6 +29,7 @@ vim.g.lazyvim_rust_diagnostics = "rust-analyzer" -- rust
 vim.g.lazyvim_python_lsp = "basedpyright"
 
 if vim.g.neovide then
+	-- scaling factors
 	local os = vim.uv.os_uname().sysname
 	if os == "Linux" then
 		vim.g.neovide_scale_factor = 0.85
@@ -40,6 +41,8 @@ if vim.g.neovide then
 	if os == "Darwin" then
 		vim.g.neovide_scale_factor = 1.10
 	end
+
+	vim.opt.linespace = 2
 end
 
 -- turn off bitch ass swap file warning

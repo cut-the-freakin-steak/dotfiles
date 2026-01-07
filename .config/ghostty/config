@@ -5,10 +5,10 @@
 theme = Catppuccin Mocha
 
 # font options
-font-family = FiraCode Nerd Font
-font-family-bold = FiraCode Nerd Font Bold
-font-family-italic = FiraCode Nerd Font Italic
-font-family-bold-italic = FiraCode Nerd Font Bold Italic
+font-family = JetBrainsMono Nerd Font
+font-family-bold = JetBrainsMono Nerd Font Bold
+font-family-italic = JetBrainsMono Nerd Font Italic
+font-family-bold-italic = JetBrainsMono Nerd Font Bold Italic
 font-size = 20
 
 # cursor options
