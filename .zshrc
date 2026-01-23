@@ -20,7 +20,7 @@ case "$(uname -s)" in
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
 	# add godot to the path
 	export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
-	# alias godot4="godot.x11.opt.tools.64"
+	alias godot="godot.x11.opt.tools.64"
     ;;
   Darwin*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
