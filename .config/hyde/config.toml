@@ -18,14 +18,15 @@ font_size = 10
 terminal = "kitty"
 
 [battery.notify]
-interval = 4400000
+dock = false
+interval = 0
 notify = 0
-timer = 40040494949
+timer = 0
 
 [battery.notify.threshold]
 low = 25
 critical = 10
-full = 101
+full = 102
 unplug = 1
 
 [wallpaper]
