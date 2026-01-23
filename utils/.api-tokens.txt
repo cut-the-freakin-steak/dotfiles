@@ -1,0 +1,3 @@
+GitHub Access Token: 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
+
+crates.io "MacBook Air" API Token: ciogWtXkavK8Cw6JzdRt0g1gQUzDlps3A3V
