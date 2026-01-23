@@ -32,12 +32,14 @@ esac
 
 source $ZSH/oh-my-zsh.sh
 
-# Added by Windsurf
-export PATH="/Users/steak/.codeium/windsurf/bin:$PATH"
-
 # User configuration
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"
+
+export RUST_BACKTRACE=1
+# bring cargo programs onto the PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+alias rust_analyzer="rust-analyzer"
 
 # export default python venv
 # export VIRTUAL_ENV="/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13"
@@ -53,6 +55,7 @@ alias ls="ls --color"
 alias arch-update-system="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y"
 alias godot4="godot"
 alias check-batteries="~/dotfiles/utils/check-device-batteries.sh"
+alias pullin-the-blanket="~/dotfiles/utils/pullin-the-blanket.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
