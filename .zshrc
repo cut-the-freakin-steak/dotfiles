@@ -20,10 +20,14 @@ case "$(uname -s)" in
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
 	# add godot to the path
 	export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
+	export GODOT4_BIN="$HOME/.local/share/Steam/steamapps/common/Godot Engine/godot.x11.opt.tools.64"
 	alias godot="godot.x11.opt.tools.64"
     ;;
   Darwin*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
+	export PATH="/Users/steak/Library/Application Support/Steam/steamapps/common/Godot Engine/Godot.app/Contents/MacOS/Godot:$PATH"
+	export GODOT4_BIN="/Users/steak/Library/Application Support/Steam/steamapps/common/Godot Engine/Godot.app/Contents/MacOS/Godot"
+	alias godot="Godot"
     ;;
   *)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig"
@@ -71,6 +75,17 @@ fi
 
 # source/load zinit
 source "${ZINIT_HOME}/zinit.zsh"
+
+# put emsdk env variables in path
+export PATH="/Users/steak/emsdk:$PATH"
+export PATH="/Users/steak/emsdk/upstream/emscripten/:$PATH"
+
+export EMSDK="/Users/steak/emsdk"
+export EMSDK_NODE="/Users/steak/emsdk/node/22.16.0_64bit/bin/node"
+export EMSDK_PYTHON="/Users/steak/emsdk/python/3.13.3_64bit/bin/python3"
+export SSL_CERT_FILE="/Users/steak/emsdk/python/3.13.3_64bit/lib/python3.13/site-packages/certifi/cacert.pem"
+
+# source "/Users/steak/emsdk/emsdk_env.sh"
 
 # add zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
