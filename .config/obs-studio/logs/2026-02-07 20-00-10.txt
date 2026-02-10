@@ -1,0 +1,336 @@
+20:00:10.737: Platform: Wayland
+20:00:10.737: CPU Name: AMD Ryzen AI 5 340 w/ Radeon 840M
+20:00:10.737: CPU Speed: 2007.793MHz
+20:00:10.738: Physical Cores: 6, Logical Cores: 12
+20:00:10.738: Physical Memory: 15266MB Total, 4279MB Free
+20:00:10.738: Kernel Version: Linux 6.18.9-2-cachyos
+20:00:10.738: Distribution: "CachyOS Linux" Unknown
+20:00:10.738: Desktop Environment: Hyprland (Hyprland)
+20:00:10.738: Session Type: wayland
+20:00:10.739: Current Date/Time: 2026-02-07, 08:00:10 PM
+20:00:10.739: Browser Hardware Acceleration: true
+20:00:10.739: Qt Version: 6.10.2 (runtime), 6.10.1 (compiled)
+20:00:10.739: Portable mode: false
+20:00:10.820: OBS 32.0.4 (linux)
+20:00:10.820: ---------------------------------
+20:00:10.822: ---------------------------------
+20:00:10.822: audio settings reset:
+20:00:10.822: 	samples per sec: 48000
+20:00:10.822: 	speakers:        2
+20:00:10.822: 	max buffering:   960 milliseconds
+20:00:10.822: 	buffering type:  dynamically increasing
+20:00:10.825: ---------------------------------
+20:00:10.825: Initializing OpenGL...
+20:00:10.825: Using EGL/Wayland
+20:00:10.871: Initialized EGL 1.5
+20:00:10.892: Loading up OpenGL on adapter AMD AMD Radeon 840M Graphics (radeonsi, gfx1152, LLVM 21.1.6, DRM 3.64, 6.18.9-2-cachyos)
+20:00:10.892: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.3.4-arch1.2, shading language 4.60
+20:00:11.071: ---------------------------------
+20:00:11.071: video settings reset:
+20:00:11.071: 	base resolution:   1920x1080
+20:00:11.071: 	output resolution: 1920x1080
+20:00:11.071: 	downscale filter:  Bicubic
+20:00:11.071: 	fps:               60/1
+20:00:11.071: 	format:            NV12
+20:00:11.071: 	YUV mode:          Rec. 709/Full
+20:00:11.071: NV12 texture support enabled
+20:00:11.071: P010 texture support not available
+20:00:11.074: Audio monitoring device:
+20:00:11.074: 	name: Default
+20:00:11.074: 	id: default
+20:00:11.077: ---------------------------------
+20:00:11.078: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:00:11.080: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+20:00:11.081: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:00:11.082: Failed to initialize module 'decklink.so'
+20:00:11.255: [pipewire] Available capture sources:
+20:00:11.255: [pipewire]     - Monitor source
+20:00:11.255: [pipewire]     - Window source
+20:00:11.306: VAAPI: API version 1.22
+20:00:11.307: FFmpeg VAAPI H264 encoding supported
+20:00:11.313: FFmpeg VAAPI AV1 encoding supported
+20:00:11.321: FFmpeg VAAPI HEVC encoding supported
+20:00:11.327: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+20:00:11.327: 
+20:00:11.327: NVENC not supported
+20:00:11.327: Failed to initialize module 'obs-nvenc.so'
+20:00:11.377: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+20:00:11.377: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.1 | Qt version (run-time): 6.10.2
+20:00:11.377: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+20:00:11.384: [obs-websocket] [obs_module_load] Module loaded.
+20:00:11.391: ---------------------------------
+20:00:11.391:   Loaded Modules:
+20:00:11.391:     linux-pipewire-audio.so
+20:00:11.391:     text-freetype2.so
+20:00:11.391:     rtmp-services.so
+20:00:11.391:     obs-x264.so
+20:00:11.391:     obs-websocket.so
+20:00:11.391:     obs-webrtc.so
+20:00:11.391:     obs-vst.so
+20:00:11.391:     obs-transitions.so
+20:00:11.391:     obs-qsv11.so
+20:00:11.391:     obs-outputs.so
+20:00:11.391:     obs-libfdk.so
+20:00:11.391:     obs-filters.so
+20:00:11.391:     obs-ffmpeg.so
+20:00:11.391:     linux-v4l2.so
+20:00:11.391:     linux-pulseaudio.so
+20:00:11.391:     linux-pipewire.so
+20:00:11.391:     linux-jack.so
+20:00:11.391:     linux-capture.so
+20:00:11.391:     linux-alsa.so
+20:00:11.391:     image-source.so
+20:00:11.391:     frontend-tools.so
+20:00:11.391:     decklink-output-ui.so
+20:00:11.391:     decklink-captions.so
+20:00:11.391: ---------------------------------
+20:00:11.391: ---------------------------------
+20:00:11.391: Available Encoders:
+20:00:11.391:   Video Encoders:
+20:00:11.391: 	- ffmpeg_svt_av1 (SVT-AV1)
+20:00:11.391: 	- ffmpeg_aom_av1 (AOM AV1)
+20:00:11.391: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+20:00:11.391: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+20:00:11.391: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+20:00:11.391: 	- obs_x264 (x264)
+20:00:11.391:   Audio Encoders:
+20:00:11.391: 	- ffmpeg_aac (FFmpeg AAC)
+20:00:11.391: 	- ffmpeg_opus (FFmpeg Opus)
+20:00:11.391: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+20:00:11.391: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+20:00:11.391: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+20:00:11.391: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+20:00:11.391: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+20:00:11.391: 	- libfdk_aac (libfdk AAC)
+20:00:11.391: ==== Startup complete ===============================================
+20:00:11.442: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+20:00:11.442: All scene data cleared
+20:00:11.442: ------------------------------------------------
+20:00:11.457: Device for 'Audio Output Capture' source Easy Effects Source is also used for audio monitoring.
+20:00:11.457: Deduplication logic is being applied to all monitored sources.
+20:00:11.457: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.10) 15.0.0'
+20:00:11.458: pulse-input: Audio format: float32le, 48000 Hz, 1 channels
+20:00:11.458: pulse-input: Started recording from 'mono_output.monitor' (default)
+20:00:11.458: [Loaded global audio device]: 'Easy Effects Source'
+20:00:11.458: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.10) 15.0.0'
+20:00:11.458: pulse-input: Audio format: s24le, 48000 Hz, 1 channels
+20:00:11.458: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+20:00:11.458: pulse-input: Started recording from 'alsa_input.usb-Razer_Inc._Razer_Seiren_V3_Mini-00.mono-fallback' (default)
+20:00:11.459: [Loaded global audio device]: '2. Mic/Aux'
+20:00:11.459:     - filter: 'Noise Gate' (noise_gate_filter)
+20:00:11.459: PipeWire initialized
+20:00:11.467: [pipewire] Created stream 0x561a40faf350
+20:00:11.468: [pipewire] Created stream 0x561a4104ec80
+20:00:11.469: Switched to scene 'Recording'
+20:00:11.469: ------------------------------------------------
+20:00:11.469: Loaded scenes:
+20:00:11.469: - scene 'Recording':
+20:00:11.469:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+20:00:11.470:     - source: '3. Discord' (pipewire_audio_application_capture)
+20:00:11.470:     - source: '1. Desktop Audio' (pipewire_audio_application_capture)
+20:00:11.470: ------------------------------------------------
+20:00:11.481: [pipewire] Created app capture sink 178 with 2 channels and position FL,FR
+20:00:11.481: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:00:11.481: Device for 'Audio Output Capture' source Easy Effects Source is also used for audio monitoring.
+20:00:11.481: Deduplication logic is being applied to all monitored sources.
+20:00:11.487: [pipewire] Created app capture sink 136 with 2 channels and position FL,FR
+20:00:11.487: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:00:11.503: [pipewire] 0x561a40faf350 Got format: rate 48000 - channels 2 - format 8
+20:00:11.508: [pipewire] 0x561a4104ec80 Got format: rate 48000 - channels 2 - format 8
+20:00:11.526: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: 3. Discord)
+20:00:11.526: 
+20:00:11.531: QDBusTrayIcon encountered a D-Bus error: QDBusError("org.freedesktop.DBus.Error.UnknownObject", "No such object path '/StatusNotifierWatcher'")
+20:00:11.532: [pipewire] Screencast session created
+20:00:11.991: [rtmp-services plugin] Successfully updated file 'services.json' (version 284)
+20:00:11.991: [rtmp-services plugin] Successfully updated package (version 284)
+20:00:13.119: [pipewire] Asking for monitor and window
+20:00:13.124: [pipewire] source selected, setting up screencast
+20:00:13.128: [pipewire] Server version: 1.4.10
+20:00:13.128: [pipewire] Library version: 1.4.10
+20:00:13.128: [pipewire] Header version: 1.4.9
+20:00:13.128: [pipewire] Created stream 0x561a406ce390
+20:00:13.128: [pipewire] Stream 0x561a406ce390 state: "connecting" (error: none)
+20:00:13.129: [pipewire] Playing stream 0x561a406ce390
+20:00:13.129: [pipewire] Stream 0x561a406ce390 state: "paused" (error: none)
+20:00:13.151: [pipewire] Negotiated format:
+20:00:13.151: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.151: [pipewire]     Modifier: 0x0
+20:00:13.151: [pipewire]     Size: 1920x1080
+20:00:13.151: [pipewire]     Framerate: 0/1
+20:00:13.152: [pipewire] Negotiated format:
+20:00:13.152: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.152: [pipewire]     Modifier: 0x2000000084abb04
+20:00:13.152: [pipewire]     Size: 1920x1080
+20:00:13.152: [pipewire]     Framerate: 0/1
+20:00:13.153: [pipewire] Stream 0x561a406ce390 state: "streaming" (error: none)
+20:00:13.161: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+20:00:13.161: [pipewire] Renegotiating stream
+20:00:13.162: [pipewire] Stream 0x561a406ce390 state: "paused" (error: none)
+20:00:13.162: [pipewire] Negotiated format:
+20:00:13.162: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.162: [pipewire]     Modifier: 0x2000000084abb04
+20:00:13.162: [pipewire]     Size: 1920x1080
+20:00:13.162: [pipewire]     Framerate: 0/1
+20:00:13.163: [pipewire] Negotiated format:
+20:00:13.163: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.163: [pipewire]     Modifier: 0x20000000846bb04
+20:00:13.163: [pipewire]     Size: 1920x1080
+20:00:13.163: [pipewire]     Framerate: 0/1
+20:00:13.164: [pipewire] Stream 0x561a406ce390 state: "streaming" (error: none)
+20:00:13.176: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+20:00:13.176: [pipewire] Renegotiating stream
+20:00:13.176: [pipewire] Stream 0x561a406ce390 state: "paused" (error: none)
+20:00:13.176: [pipewire] Negotiated format:
+20:00:13.176: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.176: [pipewire]     Modifier: 0x20000000846bb04
+20:00:13.176: [pipewire]     Size: 1920x1080
+20:00:13.176: [pipewire]     Framerate: 0/1
+20:00:13.177: [pipewire] Negotiated format:
+20:00:13.177: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.177: [pipewire]     Modifier: 0x200000008467b04
+20:00:13.177: [pipewire]     Size: 1920x1080
+20:00:13.177: [pipewire]     Framerate: 0/1
+20:00:13.178: [pipewire] Stream 0x561a406ce390 state: "streaming" (error: none)
+20:00:13.191: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+20:00:13.191: [pipewire] Renegotiating stream
+20:00:13.191: [pipewire] Stream 0x561a406ce390 state: "paused" (error: none)
+20:00:13.191: [pipewire] Negotiated format:
+20:00:13.191: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.191: [pipewire]     Modifier: 0x200000008467b04
+20:00:13.191: [pipewire]     Size: 1920x1080
+20:00:13.191: [pipewire]     Framerate: 0/1
+20:00:13.192: [pipewire] Negotiated format:
+20:00:13.192: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.192: [pipewire]     Modifier: 0x200000008437b04
+20:00:13.192: [pipewire]     Size: 1920x1080
+20:00:13.192: [pipewire]     Framerate: 0/1
+20:00:13.193: [pipewire] Stream 0x561a406ce390 state: "streaming" (error: none)
+20:00:13.204: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+20:00:13.204: [pipewire] Renegotiating stream
+20:00:13.204: [pipewire] Stream 0x561a406ce390 state: "paused" (error: none)
+20:00:13.205: [pipewire] Negotiated format:
+20:00:13.205: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.205: [pipewire]     Modifier: 0x200000008437b04
+20:00:13.205: [pipewire]     Size: 1920x1080
+20:00:13.205: [pipewire]     Framerate: 0/1
+20:00:13.205: [pipewire] Negotiated format:
+20:00:13.205: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:00:13.205: [pipewire]     Modifier: 0x200000008401b04
+20:00:13.205: [pipewire]     Size: 1920x1080
+20:00:13.205: [pipewire]     Framerate: 0/1
+20:00:13.206: [pipewire] Stream 0x561a406ce390 state: "streaming" (error: none)
+20:00:26.817: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a40906560 with focusing surface 0x561a3d21f710
+20:00:30.725: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:00:30.725: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:00:32.125: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:00:32.793: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x561a3d21f710 with focusing surface 0x561a40906560
+20:00:33.182: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x561a40906560 with focusing surface 0x561a3d21f710
+20:00:36.130: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a409aa6b0 with focusing surface 0x561a3d21f710
+20:00:39.003: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a3d010220 with focusing surface 0x561a409aa6b0
+20:00:40.281: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:00:45.278: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a408cc520 with focusing surface 0x561a3d21f710
+20:00:47.581: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:00:50.371: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:00:50.371: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:00:53.368: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a408c90e0 with focusing surface 0x561a3d21f710
+20:01:05.283: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:01:05.727: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x561a3d21f710 with focusing surface 0x561a408c90e0
+20:01:05.877: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x561a408c90e0 with focusing surface 0x561a3d21f710
+20:01:08.356: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a405ea920 with focusing surface 0x561a3d21f710
+20:01:08.404: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a405ea920 with focusing surface 0x561a3d21f710
+20:01:09.986: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:01:13.562: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:01:13.917: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x561a3d21f710 with focusing surface 0x561a405ea920
+20:01:14.081: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x561a405ea920 with focusing surface 0x561a3d21f710
+20:01:17.254: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a40964fd0 with focusing surface 0x561a3d21f710
+20:01:33.573: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a3ccc3500 with focusing surface 0x561a3d21f710
+20:01:42.307: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:01:45.686: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a40977ce0 with focusing surface 0x561a3d21f710
+20:01:51.619: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a409dd930 with focusing surface 0x561a3d21f710
+20:01:53.016: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a40977ce0 with focusing surface 0x561a3d21f710
+20:01:56.709: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a41285360 with focusing surface 0x561a3d21f710
+20:01:56.726: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a41285360 with focusing surface 0x561a3d21f710
+20:01:59.752: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:02:01.642: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:02:08.107: [pipewire] Could not connect port 175 of node 172 to app capture sink. No port of app capture sink has channel MONO
+20:02:19.768: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561a40816190 with focusing surface 0x561a3d21f710
+20:02:22.208: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:02:23.642: [pipewire] Could not connect port 203 of node 83 to app capture sink. No port of app capture sink has channel MONO
+20:02:27.174: ==== Shutting down ==================================================
+20:02:27.178: pulse-input: Stopped recording from 'mono_output.monitor'
+20:02:27.178: pulse-input: Got 5428 packets with 6513600 frames
+20:02:27.178: Deduplication logic stopped.
+20:02:27.178: pulse-input: Stopped recording from 'alsa_input.usb-Razer_Inc._Razer_Seiren_V3_Mini-00.mono-fallback'
+20:02:27.178: pulse-input: Got 5428 packets with 6513600 frames
+20:02:27.179: [pipewire] Stream 0x561a406ce390 state: "paused" (error: none)
+20:02:27.179: [pipewire] Stream 0x561a406ce390 state: "unconnected" (error: none)
+20:02:27.182: [pipewire] Error id:0 seq:131 res:-2 :unknown resource 38 op:7
+20:02:27.211: All scene data cleared
+20:02:27.212: ------------------------------------------------
+20:02:27.295: [obs-websocket] [obs_module_unload] Shutting down...
+20:02:27.296: Tried to call obs_frontend_remove_event_callback with no callbacks!
+20:02:27.296: [obs-websocket] [obs_module_unload] Finished shutting down.
+20:02:27.304: [Scripting] Total detached callbacks: 0
+20:02:27.305: Freeing OBS context data
+20:02:27.321: == Profiler Results =============================
+20:02:27.321: run_program_init: 905.539 ms
+20:02:27.321:  ┣OBSApp::AppInit: 26.461 ms
+20:02:27.321:  ┃ ┗OBSApp::InitLocale: 1.957 ms
+20:02:27.321:  ┗OBSApp::OBSInit: 788.4 ms
+20:02:27.321:    ┣obs_startup: 1.939 ms
+20:02:27.321:    ┗OBSBasic::OBSInit: 704.916 ms
+20:02:27.321:      ┣OBSBasic::InitBasicConfig: 0.979 ms
+20:02:27.321:      ┣OBSBasic::ResetAudio: 0.297 ms
+20:02:27.321:      ┣OBSBasic::ResetVideo: 251.628 ms
+20:02:27.321:      ┃ ┗obs_init_graphics: 248.452 ms
+20:02:27.321:      ┃   ┗shader compilation: 177.812 ms
+20:02:27.321:      ┣OBSBasic::InitOBSCallbacks: 0.007 ms
+20:02:27.321:      ┣OBSBasic::InitHotkeys: 0.039 ms
+20:02:27.321:      ┣obs_load_all_modules2: 314.062 ms
+20:02:27.321:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+20:02:27.321:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+20:02:27.321:      ┃ ┣obs_init_module(decklink.so): 0.079 ms
+20:02:27.322:      ┃ ┣obs_init_module(frontend-tools.so): 137.164 ms
+20:02:27.322:      ┃ ┣obs_init_module(image-source.so): 0.007 ms
+20:02:27.322:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+20:02:27.322:      ┃ ┣obs_init_module(linux-capture.so): 0.001 ms
+20:02:27.322:      ┃ ┣obs_init_module(linux-jack.so): 0.002 ms
+20:02:27.322:      ┃ ┣obs_init_module(linux-pipewire.so): 18.198 ms
+20:02:27.322:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.003 ms
+20:02:27.322:      ┃ ┣obs_init_module(linux-v4l2.so): 8.037 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-ffmpeg.so): 20.931 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-filters.so): 0.019 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-nvenc.so): 0.109 ms
+20:02:27.322:      ┃ ┃ ┗nvenc_check: 0.098 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-outputs.so): 0.008 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-qsv11.so): 13.781 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-transitions.so): 0.007 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-vst.so): 0.001 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-webrtc.so): 0.004 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-websocket.so): 6.471 ms
+20:02:27.322:      ┃ ┣obs_init_module(obs-x264.so): 0.003 ms
+20:02:27.322:      ┃ ┣obs_init_module(rtmp-services.so): 1.514 ms
+20:02:27.322:      ┃ ┣obs_init_module(text-freetype2.so): 0.02 ms
+20:02:27.322:      ┃ ┗obs_init_module(linux-pipewire-audio.so): 0.004 ms
+20:02:27.322:      ┣OBSBasic::InitService: 1.751 ms
+20:02:27.322:      ┣OBSBasic::ResetOutputs: 13.586 ms
+20:02:27.322:      ┣OBSBasic::CreateHotkeys: 0.068 ms
+20:02:27.322:      ┣OBSBasic::InitPrimitives: 0.071 ms
+20:02:27.322:      ┗OBSBasic::Load: 69.102 ms
+20:02:27.322: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=0.568 ms, 99th percentile=0.006 ms, 100% below 25 ms
+20:02:27.322: audio_thread(Audio): min=0.011 ms, median=0.121 ms, max=2.43 ms, 99th percentile=0.513 ms
+20:02:27.322: obs_graphics_thread(16.6667 ms): min=0.088 ms, median=0.388 ms, max=32.175 ms, 99th percentile=1.181 ms, 99.9878% below 16.667 ms
+20:02:27.322:  ┣tick_sources: min=0.001 ms, median=0.012 ms, max=7.814 ms, 99th percentile=0.034 ms
+20:02:27.322:  ┣output_frame: min=0.076 ms, median=0.191 ms, max=2.257 ms, 99th percentile=0.689 ms
+20:02:27.322:  ┃ ┗gs_context(video->graphics): min=0.076 ms, median=0.19 ms, max=2.256 ms, 99th percentile=0.688 ms
+20:02:27.322:  ┃   ┣render_video: min=0.012 ms, median=0.083 ms, max=1.904 ms, 99th percentile=0.324 ms
+20:02:27.322:  ┃   ┃ ┗render_main_texture: min=0.01 ms, median=0.078 ms, max=1.9 ms, 99th percentile=0.308 ms
+20:02:27.322:  ┃   ┗gs_flush: min=0.001 ms, median=0.097 ms, max=1.434 ms, 99th percentile=0.429 ms
+20:02:27.322:  ┗render_displays: min=0.003 ms, median=0.151 ms, max=31.976 ms, 99th percentile=0.646 ms
+20:02:27.322: =================================================
+20:02:27.322: == Profiler Time Between Calls ==================
+20:02:27.322: obs_hotkey_thread(25 ms): min=25.009 ms, median=25.016 ms, max=26.057 ms, 99.9633% within ±2% of 25 ms (0% lower, 0.0366569% higher)
+20:02:27.322: obs_graphics_thread(16.6667 ms): min=2.496 ms, median=16.667 ms, max=32.187 ms, 99.7919% within ±2% of 16.667 ms (0.110146% lower, 0.0979072% higher)
+20:02:27.322: =================================================
+20:02:27.326: Number of memory leaks: 0

@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 536870914,
+        "prev_ver": 536870916,
         "name": "Easy Effects Source",
         "uuid": "d8f2b963-3d4d-41b0-8c1e-03a76c3cc9ed",
         "id": "pulse_output_capture",
@@ -46,7 +46,7 @@
         }
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870914,
+        "prev_ver": 536870916,
         "name": "2. Mic/Aux",
         "uuid": "9b722621-c474-41ef-bdf5-5356eb82234b",
         "id": "pulse_input_capture",
@@ -57,7 +57,7 @@
         "mixers": 194,
         "sync": 0,
         "flags": 2,
-        "volume": 0.8867056965827942,
+        "volume": 1.0,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -90,7 +90,7 @@
         "private_settings": {},
         "filters": [
             {
-                "prev_ver": 536870914,
+                "prev_ver": 536870916,
                 "name": "Noise Gate",
                 "uuid": "d498e01a-c98c-42e2-9fb1-6cb472e19c11",
                 "id": "noise_gate_filter",
@@ -128,7 +128,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536870916,
             "name": "Screen Capture (PipeWire)",
             "uuid": "ff7a8864-5c13-4e30-bade-78f8ad60a976",
             "id": "pipewire-screen-capture-source",
@@ -154,13 +154,13 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536870916,
             "name": "Recording",
             "uuid": "8a827abc-6848-4edc-97d5-e99063f002fa",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 6,
+                "id_counter": 7,
                 "custom_size": false,
                 "items": [
                     {
@@ -182,61 +182,6 @@
                         "crop_right": 0,
                         "crop_bottom": 0,
                         "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "3. Discord",
-                        "source_uuid": "aca20d2e-4da4-48f3-b15a-3345185227fe",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 6,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -327,6 +272,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "3. Discord",
+                        "source_uuid": "1634c5c7-4932-412d-812e-b507a49ccc98",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -345,10 +345,10 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.6": [],
-                "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -357,7 +357,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536870916,
             "name": "1. Desktop Audio",
             "uuid": "650c8f6b-7659-44fd-ae50-02690539a5bd",
             "id": "pipewire_audio_application_capture",
@@ -366,12 +366,13 @@
                 "AppToAdd": "Discord",
                 "TargetName": "Discord",
                 "CaptureMode": 0,
+                "MatchPriorty": 0,
                 "ExceptApp": true
             },
             "mixers": 193,
             "sync": 0,
             "flags": 0,
-            "volume": 0.7268195748329163,
+            "volume": 0.5610094666481018,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -391,18 +392,30 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536870916,
             "name": "3. Discord",
-            "uuid": "aca20d2e-4da4-48f3-b15a-3345185227fe",
+            "uuid": "1634c5c7-4932-412d-812e-b507a49ccc98",
             "id": "pipewire_audio_application_capture",
             "versioned_id": "pipewire_audio_application_capture",
             "settings": {
-                "TargetName": "Discord"
+                "AppToAdd": "Discord",
+                "TargetName": "Discord",
+                "CaptureMode": 0,
+                "MatchPriorty": 0,
+                "ExceptApp": false,
+                "apps": [
+                    {
+                        "hidden": false,
+                        "selected": false,
+                        "value": "Discord",
+                        "uuid": "b8716a80-e9df-43ee-b9d4-e4ccbecb5af8"
+                    }
+                ]
             },
-            "mixers": 196,
+            "mixers": 252,
             "sync": 0,
             "flags": 0,
-            "volume": 0.7481428384780884,
+            "volume": 0.7567713856697083,
             "balance": 0.5,
             "enabled": true,
             "muted": false,

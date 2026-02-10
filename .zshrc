@@ -36,6 +36,8 @@ esac
 
 source $ZSH/oh-my-zsh.sh
 
+export SDL_AUDIODRIVER="pulseaudio" # fix discord screenshare not picking up on SDL2 audio
+
 # User configuration
 # make neovide config path the correct one for me
 export NEOVIDE_CONFIG="$HOME/dotfiles/.config/neovide"

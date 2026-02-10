@@ -1,0 +1,21 @@
+[opener]
+edit = [
+	{ run = "neovide %s", block = true, for = "unix" },
+	{ run = "%neovide% %s", block = true, for = "windows" },
+]
+photo = [
+	{ run = "nohup satty --filename %s > /dev/null 2>&1 &", block = true, for = "unix" },
+]
+
+[open]
+rules = [
+	{ mime = "text/*", use = "edit" },
+	{ mime = "video/*", use = "play" },
+	{ mime = "image/*", use = "photo" },
+
+	# { mime = "application/json", use = "edit" },
+	{ url = "*.json", use = "edit" },
+
+	# Multiple openers for a single rule
+	{ url = "*.html", use = ["open", "edit"] },
+]
