@@ -20,14 +20,13 @@ case "$(uname -s)" in
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
 	# add godot to the path
 	export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
-	export GODOT4_BIN="$HOME/.local/share/Steam/steamapps/common/Godot Engine/godot.x11.opt.tools.64"
 	alias godot="godot.x11.opt.tools.64"
     ;;
   Darwin*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
 	export PATH="/Users/steak/Library/Application Support/Steam/steamapps/common/Godot Engine/Godot.app/Contents/MacOS/Godot:$PATH"
-	export GODOT4_BIN="/Users/steak/Library/Application Support/Steam/steamapps/common/Godot Engine/Godot.app/Contents/MacOS/Godot"
 	alias godot="Godot"
+	export LLVM_PATH="/opt/homebrew/opt/llvm"
     ;;
   *)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig"
