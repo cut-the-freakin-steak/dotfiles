@@ -14,19 +14,28 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
 
+godot4rustmac="$HOME/dev/Godot Engine v4.5.1.app/Contents/MacOS/Godot"
+godot4rustlinux="$HOME/dev/Godot_v4.5.1-stable_linux.x86_64"
+
 # speaking of git, set up .gitconfig
 case "$(uname -s)" in
   Linux*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-linux"
-	# add godot to the path
+
 	export PATH="$HOME/.local/share/Steam/steamapps/common/Godot Engine:$PATH"
 	alias godot="godot.x11.opt.tools.64"
+	alias godot4rust=$godot4rustlinux
+	export GODOT4_BIN=$godot4rustlinux
+
+	export LLVM_PATH="/usr/bin/llvm-config"
     ;;
   Darwin*)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig-macos"
+
 	export PATH="/Users/steak/Library/Application Support/Steam/steamapps/common/Godot Engine/Godot.app/Contents/MacOS/Godot:$PATH"
 	alias godot="Godot"
-	export LLVM_PATH="/opt/homebrew/opt/llvm"
+	alias godot4rust=$godot4rustmac
+	export GODOT4_BIN=$godot4rustmac
 
 	# put emsdk env variables in path
 	export PATH="/Users/steak/emsdk:$PATH"
@@ -73,9 +82,8 @@ alias pip="python3 -m pip"
 alias stow="stow --adopt --ignore .DS_Store"
 alias ls="ls --color"
 alias arch-update-system="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y"
-alias godot4="godot"
-alias check-batteries="~/dotfiles/utils/check-device-batteries.sh"
-alias pullin-the-blanket="~/dotfiles/utils/pullin-the-blanket.sh"
+alias check-batteries="$HOME/dotfiles/utils/check-device-batteries.sh"
+alias pullin-the-blanket="$HOME/dotfiles/utils/pullin-the-blanket.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh

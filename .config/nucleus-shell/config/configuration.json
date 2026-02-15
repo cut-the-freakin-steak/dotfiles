@@ -1,6 +1,7 @@
 {
     "appearance": {
         "animations": {
+            "durationScale": 1,
             "enabled": true
         },
         "background": {
@@ -33,6 +34,9 @@
             "matugenScheme": "scheme-fruit-salad",
             "runMatugenUserWide": true,
             "scheme": "catppuccin-lavender"
+        },
+        "font": {
+            "scale": 1
         },
         "rounding": {
             "factor": 0.5
@@ -132,6 +136,6 @@
     "shell": {
         "qsVersion": "0.2.1",
         "releaseChannel": "edge",
-        "version": "0.7.1"
+        "version": "0.7.3"
     }
 }
