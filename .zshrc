@@ -29,7 +29,7 @@ case "$(uname -s)" in
 	export LLVM_PATH="/opt/homebrew/opt/llvm"
 
 	# not necessarily the godot instance im using, but the one im compiling my rust code with
-	export GODOT4_BIN="$HOME/dev/Godot Engine v4.5.1.app/Contents/MacOS/Godot"
+	# export GODOT4_BIN="$HOME/dev/Godot Engine v4.5.1.app/Contents/MacOS/Godot"
     ;;
   *)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig"
