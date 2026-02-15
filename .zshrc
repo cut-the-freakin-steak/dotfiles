@@ -46,6 +46,8 @@ case "$(uname -s)" in
 	export EMSDK_PYTHON="/Users/steak/emsdk/python/3.13.3_64bit/bin/python3"
 	export SSL_CERT_FILE="/Users/steak/emsdk/python/3.13.3_64bit/lib/python3.13/site-packages/certifi/cacert.pem"
 
+	export LLVM_PATH="/opt/homebrew/opt/llvm"
+
 # source "/Users/steak/emsdk/emsdk_env.sh"
 
 
