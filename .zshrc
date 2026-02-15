@@ -28,6 +28,18 @@ case "$(uname -s)" in
 	alias godot="Godot"
 	export LLVM_PATH="/opt/homebrew/opt/llvm"
 
+	# put emsdk env variables in path
+	export PATH="/Users/steak/emsdk:$PATH"
+	export PATH="/Users/steak/emsdk/upstream/emscripten/:$PATH"
+
+	export EMSDK="/Users/steak/emsdk"
+	export EMSDK_NODE="/Users/steak/emsdk/node/22.16.0_64bit/bin/node"
+	export EMSDK_PYTHON="/Users/steak/emsdk/python/3.13.3_64bit/bin/python3"
+	export SSL_CERT_FILE="/Users/steak/emsdk/python/3.13.3_64bit/lib/python3.13/site-packages/certifi/cacert.pem"
+
+# source "/Users/steak/emsdk/emsdk_env.sh"
+
+
 	# not necessarily the godot instance im using, but the one im compiling my rust code with
 	# export GODOT4_BIN="$HOME/dev/Godot Engine v4.5.1.app/Contents/MacOS/Godot"
     ;;
