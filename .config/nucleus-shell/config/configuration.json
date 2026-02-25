@@ -36,6 +36,15 @@
             "scheme": "catppuccin-lavender"
         },
         "font": {
+            "families": {
+                "expressive": "Space Grotesk",
+                "main": "JetBrains Mono",
+                "materialIcons": "Material Symbols Rounded",
+                "monospace": "JetBrains Mono NF",
+                "nerdFonts": "JetBrains Mono NF",
+                "reading": "Readex Pro",
+                "title": "Gabarito"
+            },
             "scale": 1
         },
         "rounding": {
@@ -136,6 +145,6 @@
     "shell": {
         "qsVersion": "0.2.1",
         "releaseChannel": "edge",
-        "version": "0.7.3"
+        "version": "0.7.5"
     }
 }

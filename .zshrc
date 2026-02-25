@@ -38,6 +38,10 @@ case "$(uname -s)" in
 	export GODOT4_BIN=$godot4rustmac
 
 	export LLVM_PATH="/opt/homebrew/opt/llvm"
+
+	# emscripten stuf idfk
+	export EMSDK_PYTHON="$HOME/emsdk/python/3.13.3_64bit/bin/python3"
+	export SSL_CERT_FILE="$HOME/emsdk/python/3.13.3_64bit/lib/python3.13/site-packages/certifi/cacert.pem"
     ;;
   *)
     export GIT_CONFIG_GLOBAL="$HOME/.gitconfig"
@@ -59,12 +63,9 @@ alias rust_analyzer="rust-analyzer"
 
 # put emsdk env variables in path
 export PATH="$HOME/emsdk:$PATH"
-export PATH="$HOME/emsdk/upstream/emscripten/:$PATH"
-
+export PATH="$HOME/emsdk/upstream/emscripten:$PATH"
 export EMSDK="$HOME/emsdk"
 export EMSDK_NODE="$HOME/emsdk/node/22.16.0_64bit/bin/node"
-export EMSDK_PYTHON="$HOME/emsdk/python/3.13.3_64bit/bin/python3"
-export SSL_CERT_FILE="$HOME/emsdk/python/3.13.3_64bit/lib/python3.13/site-packages/certifi/cacert.pem"
 
 # export default python venv
 # export VIRTUAL_ENV="/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13"
