@@ -8,7 +8,7 @@ export QT_SCALE_FACTOR_ROUNDING_POLICY=RoundPreferFloor
 
 # Electron apps (Discord, Slack, VS Code, etc.)
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
-export NPM_CONFIG_ELECTRON_RUN_AS_NODE=0 # prevents weird crashes
+# export NPM_CONFIG_ELECTRON_RUN_AS_NODE=1 # prevents weird crashes
 
 # GTK fallback scaling tweaks
 export GDK_SCALE=1
