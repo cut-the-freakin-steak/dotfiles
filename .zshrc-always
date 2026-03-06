@@ -76,7 +76,7 @@ export EMSDK_NODE="$HOME/emsdk/node/22.16.0_64bit/bin/node"
 # aliases
 alias python="python3"
 alias pip="python3 -m pip"
-alias stow="stow --adopt --ignore .DS_Store"
+alias stow="stow --ignore .DS_Store"
 alias ls="ls --color"
 alias arch-update-system="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y"
 alias check-batteries="$HOME/dotfiles/utils/check-device-batteries.sh"
