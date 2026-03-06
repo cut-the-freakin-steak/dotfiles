@@ -1,63 +1,144 @@
-{
-	// sourced from header module //
-	"layer": "top",
-	"output": [
-		"*"
-	],
-	"height": 12,
-	"exclusive": true,
-	"passthrough": false,
-	"reload_style_on_change": true,
-	"include": [
-		"$XDG_CONFIG_HOME/waybar/modules/*json*",
-		"$XDG_CONFIG_HOME/waybar/includes/includes.json"
-	],
-	// positions generated based on config.ctl //
-	"modules-left": [
-		"group/pill#left"
-	],
-	"group/pill#left": {
-		"orientation": "inherit",
-		"modules": [
-			"hyprland/workspaces",
-			"wlr/taskbar"
-		]
-	},
-	"modules-center": [
-		"group/pill#center"
-	],
-	"group/pill#center": {
-		"orientation": "inherit",
-		"modules": [
-			"keyboard-state",
-			"custom/hyprsunset",
-			"idle_inhibitor",
-			"clock",
-			"custom/updates",
-			"custom/keybindhint",
-			"custom/gamemode",
-			"custom/weather"
-		]
-	},
-	"modules-right": [
-		"group/pill#right"
-	],
-	"group/pill#right": {
-		"orientation": "inherit",
-		"modules": [
-			"privacy",
-			"backlight",
-			"tray",
-			"network",
-			"custom/bluetooth",
-			"pulseaudio",
-			"pulseaudio#microphone",
-			"battery",
-			"custom/gpuinfo",
-			"custom/cpuinfo",
-			"custom/sensorsinfo",
-			"custom/swaync",
-			"custom/hyde-menu"
-		]
-	}
-}
+[
+    {
+        "position": "top",
+        "reload_style_on_change": true,
+        "margin-top": 8,
+        "modules-center": [
+            "clock",
+            "custom/cava",
+            "group/mpris-drawer",
+            "hyprland/workspaces",
+            "group/hide-tray",
+//            "pulseaudio",
+            "battery",
+            "custom/notification"
+        ],
+
+        "custom/cava": {
+            "format": "{}",
+            "exec": "$HOME/user_scripts/waybar/cava.sh --10 --clean"
+        },
+
+        "group/mpris-drawer": {
+            "orientation": "inherit",
+            "drawer": {
+                "transition-duration": "0.3",
+                "children-class": "mpris-drawer",
+                "click-to-reveal": false
+            },
+            "modules": ["custom/mpris-trigger", "mpris"]
+        },
+
+        "custom/mpris-trigger": {
+            "format": "♪",
+            "tooltip": false
+        },
+
+        "mpris": {
+            "format": "{player_icon} {title}",
+            "format-paused": "{status_icon} <i>{position} {artist}</i>",
+            "format-stopped": "",
+            "player-icons": {
+                "default": "",
+                "firefox": "",
+                "mpv": "",
+                "spotify": ""
+            },
+            "status-icons": {
+                "paused": ""
+            },
+            "max-length": 20
+        },
+
+        "clock": {
+            "format": "{:%I:%M %p}",
+            "format-alt": "{:%a, %b %d}",
+            "tooltip": false
+        },
+        "hyprland/workspaces": {
+            "format": "{icon}",
+            "format-icons": {
+                "active": "󰮯",
+                "visible": "",
+                "default": "󰊠",
+                "persistent": "󰊠"
+            },
+            "persistent-workspaces": {
+                "*": 4
+            },
+            "on-click": "activate",
+            "on-scroll-down": "hyprctl dispatch workspace e+1",
+            "on-scroll-up": "hyprctl dispatch workspace e-1"
+        },
+        "pulseaudio": {
+            "format": "{icon}  {volume}%",
+            "format-muted": "",
+            "format-icons": {
+                "headphone": "",
+                "hands-free": "󰋋",
+                "headset": "󰋋",
+                "phone": "",
+                "phone-muted": "",
+                "portable": "",
+                "car": "",
+                "default": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "on-scroll-up": "swayosd-client --output-volume raise",
+            "on-scroll-down": "swayosd-client --output-volume lower",
+            "on-click": "pavucontrol",
+            "ignored-sinks": [
+                "Easy Effects Sink"
+            ]
+        },
+        "tray": {
+            "spacing": 10
+        },
+        "group/hide-tray": {
+            "orientation": "inherit",
+            "drawer": {
+                "transition-duration": "0.5",
+                "children-class": "hide-tray-drawer",
+                "transition-left-to-right": true,
+                "click-to-reveal": false
+            },
+            "modules": ["custom/dropdown#arrow", "tray"]
+        },
+        "custom/dropdown#arrow": {
+            "format": "",
+            "tooltip": true,
+            "tooltip-format": "Reveal tray"
+        },
+        "battery": {
+            "format": "{icon}",
+            "format-charging": "",
+            "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "interval": 5,
+            "tooltip-format": "{timeTo}\nHealth: {health}%"
+        },
+        "custom/notification": {
+            "tooltip": true,
+            "tooltip-format": "Left Click: Launch Overwatch\n Right Click: Do Not Disturb",
+            "format": "{icon}",
+            "format-icons": {
+                "notification": "",
+                "none": "",
+                "dnd-notification": "",
+                "dnd-none": "",
+                "inhibited-notification": "",
+                "inhibited-none": "",
+                "dnd-inhibited-notification": "",
+                "dnd-inhibited-none": ""
+            },
+            "return-type": "json",
+            "exec-if": "which swaync-client",
+            "exec": "swaync-client -swb",
+            "on-click": "sleep 0.1 && swaync-client -t -sw",
+            "on-click-right": "swaync-client -d -sw",
+            "escape": true
+        }
+    }
+]

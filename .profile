@@ -16,3 +16,6 @@ export GDK_DPI_SCALE=1
 
 # make sdl2 use pulseaudio to fix screen sharing audio issue
 export SDL_AUDIODRIVER=pulseaudio
+
+# fix qt theming
+export QT_QPA_PLATFORMTHEME=qt6ct
