@@ -1,0 +1,1 @@
+../../../dotfiles/.config/hypr/shaders/disable.frag

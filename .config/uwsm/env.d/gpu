@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------
+# UWSM GPU Config | Mode: AMD_ONLY | Thu Mar  5 08:29:17 PM MST 2026
+# -----------------------------------------------------------------
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export MOZ_ENABLE_WAYLAND=1
+
+# Hyprland GPU Priority (First = Compositor)
+export AQ_DRM_DEVICES="/dev/dri/card1"
+
+# --- AMD ---
+export LIBVA_DRIVER_NAME=radeonsi

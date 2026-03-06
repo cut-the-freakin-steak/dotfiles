@@ -1,0 +1,124 @@
+
+.theme-dark {
+	--accent-h:calc(225.0/255*360);
+	--accent-s:calc(96.07843160629272/255*100%);
+	--accent-l:calc(100.0/255*100%);
+
+  --text-normal:#ffffff;
+  --text-muted:#ffffff;
+  --text-faint:#faebff;
+
+  --background-primary:#17111b; /* editor and right ribbon */
+  --background-secondary:#17111b; /* left ribbon */ 
+  --background-modifier-hover:#a6c3fc;
+  --background-modifier-active-hover:#ebf0ff;
+  --background-modifier-message:#17111b;
+  --background-modifier-form-field:#a4c3ff;
+
+  --ribbon-background:#17111b;
+  --divider-color:#a6c3fc;
+  --scrollbar-thumb-bg:#000000;
+  --status-bar-border-color:#a6c3fc;
+  --status-bar-background:#17111b;
+  --titlebar-background:#17111b;
+  --titlebar-text-color:#ffffff;
+
+  --nav-item-color:#ffffff;
+  --nav-item-color-active:#000000;
+  --nav-item-background-active:#a4c3ff;
+  --nav-item-color-hover:#000000;
+  --nav-item-background-hover:#a6c3fc;
+
+  --tab-background-active:#a4c3ff;
+  --tab-text-color-active:#000000;
+  --tab-text-color:#ffffff;
+
+  --icon-color:#ffffff;
+
+  --h1-color:#ebf0ff;
+  --h2-color: color-mix(in srgb, #ebf0ff, #faebff);
+  --h3-color:#faebff;
+  --h4-color: color-mix(in srgb, #ebf0ff, #ebf0ff);
+  --h5-color:#ebf0ff;
+  --h6-color: color-mix(in srgb, #faebff, #ebf0ff);
+
+
+  }
+
+
+/* add parts not accessible without specific selector?*/
+.theme-dark .sidebar-toggle-button.mod-left {
+  color:#ffffff;
+  background:#17111b;
+}
+.theme-dark .sidebar-toggle-button.mod-right {
+  color:#ffffff;
+  background:#17111b;
+}
+
+.theme-dark .workspace-tab-header-container{
+  background:#17111b;
+}
+
+
+/* copy for light mode */
+.theme-light {
+	--accent-h:calc(211.9565215775134/255*360);
+	--accent-s:calc(18.039216101169586/255*100%);
+	--accent-l:calc(100.0/255*100%);
+
+  --text-normal:#000000;
+  --text-muted:#000000;
+  --text-faint:#33283a;
+
+  --background-primary:#fff7fd; /* editor and right ribbon */
+  --background-secondary:#c0b5c3; /* left ribbon */ 
+  --background-modifier-hover:#2a497a;
+  --background-modifier-active-hover:#032b5b;
+  --background-modifier-message:#c0b5c3;
+  --background-modifier-form-field:#054890;
+
+  --ribbon-background:#fff7fd;
+  --divider-color:#2a497a;
+  --scrollbar-thumb-bg:#ffffff;
+  --status-bar-border-color:#2a497a;
+  --status-bar-background:#fff7fd;
+  --titlebar-background:#fff7fd;
+  --titlebar-text-color:#000000;
+
+  --nav-item-color:#000000;
+  --nav-item-color-active:#ffffff;
+  --nav-item-background-active:#054890;
+  --nav-item-color-hover:#ffffff;
+  --nav-item-background-hover:#2a497a;
+
+  --tab-background-active:#054890;
+  --tab-text-color-active:#ffffff;
+  --tab-text-color:#000000;
+
+  --icon-color:#000000;
+
+  --h1-color:#002b5c;
+  --h2-color: color-mix(in srgb, #002b5c, #3b1f52);
+  --h3-color:#3b1f52;
+  --h4-color: color-mix(in srgb, #002b5c, #032b5b);
+  --h5-color:#032b5b;
+  --h6-color: color-mix(in srgb, #3b1f52, #032b5b);
+
+
+  }
+
+
+/* add parts not accessible without specific selector?*/
+.theme-light .sidebar-toggle-button.mod-left {
+  color:#000000;
+  background:#fff7fd;
+}
+.theme-light .sidebar-toggle-button.mod-right {
+  color:#000000;
+  background:#fff7fd;
+}
+
+.theme-light .workspace-tab-header-container{
+  background:#fff7fd;
+}

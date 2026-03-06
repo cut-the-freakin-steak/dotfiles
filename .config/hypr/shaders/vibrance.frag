@@ -1,0 +1,1 @@
+../../../dotfiles/.config/hypr/shaders/vibrance.frag

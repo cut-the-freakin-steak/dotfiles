@@ -1,0 +1,1 @@
+../../../dotfiles/.config/hypr/shaders/invert-colors.frag
